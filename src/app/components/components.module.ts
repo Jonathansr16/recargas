@@ -11,7 +11,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
   declarations: [
           CarouselComponent, 
           MinfoComponent, 
-          JumbotronComponent
+          JumbotronComponent, 
                 ],
   imports: [
     CommonModule
@@ -19,7 +19,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
   exports: [
     CarouselComponent,
     MinfoComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    
   ]
 })
 export class ComponentsModule { }
