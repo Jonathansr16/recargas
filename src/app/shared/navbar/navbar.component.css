@@ -3,3 +3,114 @@
     border-bottom-right-radius: 300px 10px;
     font-family: "Century Gothic";
 }
+
+.display-1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 98px;
+    /* or 136% */
+    font-feature-settings: 'salt' on, 'liga' off;
+}
+
+.desc>.mi-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    font-feature-settings: 'salt' on, 'liga' off;
+    /* Text / Gray 900 */
+    color: #18191F;
+}
+
+.bg-ungu {
+    background-color: rgb(165, 160, 250) !important;
+    transition: 0.3s;
+}
+
+.bg-ungu:hover {
+    background-color: rgb(111, 106, 204) !important;
+}
+
+.desc {
+    max-width: 400px;
+}
+
+.tebel-banget {
+    font-weight: 900;
+}
+
+.tebel-sedang {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #2EC5CE;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(189, 73, 116);
+    color: white;
+}
+
+.gambar {
+    display: none;
+}
+
+.img {
+    width: 700px;
+    z-index: -1;
+}
+
+.link {
+    color: gray;
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: rgb(165, 160, 250);
+}
+
+@media screen and (max-width: 600px) {
+    .img {
+        display: none;
+        width: 500px;
+    }
+    .gambar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .img {
+        display: none;
+        width: 500px;
+    }
+    .gambar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .img {
+        width: 500px;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .img {
+        width: 300px;
+        z-index: -1;
+    }
+}
