@@ -9,6 +9,10 @@
     font-family: "Century Gothic";
 }
 
+.navbar-light .navbar-toggler-icon {
+    font-size: 25px;
+}
+
 .display-1 {
     font-family: Inter;
     font-style: normal;
@@ -80,6 +84,8 @@
 .link {
     color: gray;
     transition: 0.3s;
+    font-size: 20px;
+    padding: 0 10px;
 }
 
 .link:hover {

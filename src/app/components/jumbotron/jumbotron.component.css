@@ -14,7 +14,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: #87bee0;
 }
 
 .counter-up .content {
@@ -29,7 +29,7 @@
 }
 
 .counter-up .content .box {
-    border: 1px dashed rgba(255, 255, 255, 0.6);
+    border-bottom: 3px solid #18191F;
     width: calc(25% - 30px);
     border-radius: 5px;
     display: flex;
@@ -41,19 +41,19 @@
 
 .content .box .icon {
     font-size: 48px;
-    color: #e6e6e6;
+    color: #18191F;
 }
 
 .content .box .counter {
     font-size: 50px;
     font-weight: 500;
-    color: #f2f2f2;
+    color: #18191F;
     font-family: sans-serif;
 }
 
 .content .box .text {
     font-weight: 400;
-    color: #ccc;
+    color: #18191F
 }
 
 @media screen and (max-width: 1036px) {
