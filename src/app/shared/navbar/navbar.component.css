@@ -84,7 +84,7 @@
 .link {
     color: gray;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 10px;
 }
 
@@ -155,20 +155,6 @@
 .person {
     width: 123%;
     transform: translate(15%, 25px);
-}
-
-.toggle-btn {
-    display: inline-block;
-    border: none;
-    background: var(--darkTwo);
-    color: var(--backgroundColor);
-    outline: none;
-    cursor: pointer;
-    height: 39px;
-    width: 39px;
-    border-radius: 50%;
-    font-size: 1.1rem;
-    transition: 0.3s;
 }
 
 
@@ -298,44 +284,6 @@ a {
 .person {
     width: 123%;
     transform: translate(15%, 25px);
-}
-
-.toggle-btn {
-    display: inline-block;
-    border: none;
-    background: var(--darkTwo);
-    color: var(--backgroundColor);
-    outline: none;
-    cursor: pointer;
-    height: 39px;
-    width: 39px;
-    border-radius: 50%;
-    font-size: 1.1rem;
-    transition: 0.3s;
-}
-
-.toggle-btn i {
-    line-height: 39px;
-}
-
-.toggle-btn:hover {
-    background: var(--mainColor);
-}
-
-.big-wrapper.light .toggle-btn i:last-child {
-    display: none;
-}
-
-.big-wrapper.light .toggle-btn i:first-child {
-    display: block;
-}
-
-.big-wrapper.dark .toggle-btn i:last-child {
-    display: block;
-}
-
-.big-wrapper.dark .toggle-btn i:first-child {
-    display: none;
 }
 
 .shape {

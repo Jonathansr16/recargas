@@ -3,24 +3,20 @@ import { CommonModule } from '@angular/common';
 
 //Componentes
 import { CarouselComponent } from './carousel/carousel.component';
-import { MinfoComponent } from './minfo/minfo.component';
-import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { SectionComponent } from './section/section.component';
 
 
 @NgModule({
   declarations: [
           CarouselComponent, 
-          MinfoComponent, 
-          JumbotronComponent, 
+          SectionComponent 
                 ],
   imports: [
     CommonModule
   ],
   exports: [
     CarouselComponent,
-    MinfoComponent,
-    JumbotronComponent,
-    
+    SectionComponent,
   ]
 })
 export class ComponentsModule { }
