@@ -4,13 +4,13 @@ import { RouterModule } from '@angular/router';
 
 //compnentes
 import { AppComponent } from './app.component';
-
+import { PagesModule } from './pages/pages.module';
 //rutas
-import { APP_ROUTING } from './app.router';
+import { AppRoutingModule } from './routers/app-routing.module';
 
 //Modulos
 import { ComponentModule } from './components/component.module';
-
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,10 @@ import { ComponentModule } from './components/component.module';
   imports: [
    ComponentModule,
    BrowserModule,
-   APP_ROUTING,
-   RouterModule
+   RouterModule,
+   AppRoutingModule,
+   PagesModule,
+   SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

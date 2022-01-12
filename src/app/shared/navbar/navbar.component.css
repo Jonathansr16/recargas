@@ -1,0 +1,33 @@
+.navbar-light {
+    background-color: #f1f8fc;
+    border-bottom-left-radius: 300px 15px;
+    border-bottom-right-radius: 300px 15px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    font-size: 25px;
+}
+
+.button {
+    background-color: #2EC5CE;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.link {
+    color: gray;
+    transition: 0.3s;
+    font-size: 15px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #fff;
+    background: rgba(170, 165, 250);
+}

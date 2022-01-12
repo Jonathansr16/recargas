@@ -7,19 +7,19 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent  {
 
-  clientes: number=0;
+  clientes: number=1000;
   ventas: number=0;
   productos:number=0;
   anos:number=0;
   
   contador1: any = setInterval( () => {
 
-    this.clientes++;
+    this.clientes+=500;
 
-    if(this.clientes == 40) {
+    if(this.clientes == 40000) {
         clearInterval(this.contador1);
     }
-  },10);
+  },20);
 
 
   

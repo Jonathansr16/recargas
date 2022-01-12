@@ -1,7 +1,7 @@
 .counter-up {
     background: rgba(255, 255, 255, 0.6);
     min-height: 50vh;
-    padding: 0 50px;
+    padding: 0 15px;
     position: relative;
     display: flex;
     align-items: center;
@@ -31,18 +31,17 @@
 
 .counter-up .content .box {
     width: calc(25% - 30px);
-    border-left: 2px dotted #18191F;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
 }
 
 .content .box .icon {
     font-size: 48px;
-    color: #18191F;
     width: 75px;
+    padding-bottom: 25px;
 }
 
 .content .box .counter {
@@ -51,15 +50,14 @@
     line-height: 64px;
     font-size: 50px;
     font-weight: 800;
-    color: #18191F;
+    color: #fff;
 }
 
 .content .box .text {
-    font-weight: 400;
-    color: #18191F;
+    font-weight: 700;
+    color: #fff;
     font-family: 'Inter', sans-serif;
-    line-height: 32px;
-    font-feature-settings: 'salt' on, 'liga' off;
+    text-align: center;
 }
 
 @media screen and (max-width: 1036px) {
@@ -88,9 +86,9 @@
 }
 
 
-/*Card*/
+/*Card-2*/
 
-.section-card .card-title {
+.card-2 .card-2-title {
     text-align: center;
     font-size: 40px;
     margin: 15px 0 15px 0;
@@ -99,13 +97,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.section-card .fila .columna .card-item .card-body .txt-title {
+.card-2 .fila .columna .card-2-item .card-body .txt-title {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 35px;
 }
 
-.section-card .fila .columna .card-item .card-body .txt-text {
+.card-2 .fila .columna .card-2-item .card-body .txt-text {
     width: 100%;
     font-family: 'Inter';
     font-weight: bold;
@@ -113,20 +111,78 @@
     color: #18191F;
 }
 
-.section-card .fila .columna .card-item {
+.card-2 .fila .columna .card-2-item {
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: all 0.25s;
 }
 
-.section-card .fila .columna .card-item:hover {
+.card-2 .fila .columna .card-2-item:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.section-card .fila .columna .card-item a {
+.card-2 .fila .columna .card-2-item a {
     font-weight: 500;
     text-decoration: none;
     color: #3498db;
+}
+
+
+/* card-3 */
+
+.card-3 .row .col-lg-6 .card-3-title {
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+    /* or 133% */
+    font-feature-settings: 'salt' on, 'liga' off;
+}
+
+.card-3 .row .col-lg-6 .card-3-txt {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 32px;
+    /* or 133% */
+    /* Text / Gray 900 */
+    color: #18191F;
+}
+
+.card-3 .row .col-lg-6 button {
+    background-color: #64bcf4;
+}
+
+
+/* card-4 */
+
+.card-4 .card-4-title {
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    /* identical to box height, or 133% */
+    font-feature-settings: 'salt' on, 'liga' off;
+}
+
+.card-4 .row .col .card-4-tl {
+    font-family: 'inter';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+}
+
+.card-4 .row .col .card-4-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    font-feature-settings: 'salt' on, 'liga' off;
 }
