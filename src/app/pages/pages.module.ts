@@ -22,7 +22,7 @@ import { SwiperModule } from 'swiper/angular';
   imports: [
     CommonModule,
     SharedModule,
-    SwiperModule
+    SwiperModule,
   ],
   exports: [
     HomeComponent,

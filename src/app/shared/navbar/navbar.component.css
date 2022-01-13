@@ -1,5 +1,5 @@
 .navbar-light {
-    background-color: #f1f8fc;
+    background-color: rgba(124, 199, 246, 1);
     border-bottom-left-radius: 300px 15px;
     border-bottom-right-radius: 300px 15px;
 }
@@ -20,7 +20,7 @@
 }
 
 .link {
-    color: gray;
+    color: #FFF;
     transition: 0.3s;
     font-size: 15px;
     padding: 0 10px;

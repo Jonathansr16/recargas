@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { NgwWowService } from 'ngx-wow';
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', "./lading-page.css"]
 })
-export class HomeComponent  {
+export class HomeComponent   {
+
+  constructor(private wowService: NgwWowService) {
+    this.wowService.init();
+  }
+  
 
   clientes: number=1000;
   ventas: number=0;

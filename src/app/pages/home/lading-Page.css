@@ -27,7 +27,7 @@ a {
     position: relative;
     padding: 1.7rem 0 2rem;
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     overflow: hidden;
     background-color: var(--backgroundColor);
     display: flex;
@@ -67,7 +67,7 @@ a {
     font-weight: 700;
 }
 
-.btn {
+.btn-insc {
     display: inline-block;
     padding: 0.9rem 1.9rem;
     color: #fff !important;
@@ -77,7 +77,7 @@ a {
     transition: 0.3s;
 }
 
-.btn:hover {
+.btn-insc:hover {
     background-color: var(--hoverColor);
     transform: scale(1) !important;
 }
@@ -104,7 +104,7 @@ a {
     line-height: 2.3;
 }
 
-.showcase-area .btn {
+.showcase-area .btn-insc {
     box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
 }
 
@@ -200,7 +200,7 @@ a {
     .text {
         margin: 1.1rem 0 1.5rem;
     }
-    .showcase-area .btn {
+    .showcase-area .btn-insc {
         font-size: 0.8rem;
     }
 }

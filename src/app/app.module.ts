@@ -11,6 +11,7 @@ import { AppRoutingModule } from './routers/app-routing.module';
 //Modulos
 import { ComponentModule } from './components/component.module';
 import { SharedModule } from './shared/shared.module';
+import { NgwWowModule } from 'ngx-wow';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SharedModule } from './shared/shared.module';
    RouterModule,
    AppRoutingModule,
    PagesModule,
-   SharedModule
+   SharedModule,
+   NgwWowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
