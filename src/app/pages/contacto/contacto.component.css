@@ -1,0 +1,72 @@
+.card-contacto-1 .card-contacto-col ul {
+    margin-top: 3px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.card-contacto-1 .card-contacto-col ul li {
+    margin: 5px;
+    display: block;
+}
+
+.card-contacto-1 .card-contacto-col ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+}
+
+.card-contacto-1 .card-contacto-col .fas {
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-right: 8px;
+    background-color: #21618C;
+}
+
+
+/* card-2 */
+
+.card-contact-2 .card-contact2-col .fab,
+.far {
+    padding: 8px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: #154360;
+}
+
+.card-contact-2 .card-contact2-col .card-body p {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+.card-contact-2 .card-contact2-col .card-body ul {
+    margin-top: 3px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.card-contact-2 .card-contact2-col .card-body ul li {
+    margin: 5px;
+    display: block;
+}
+
+.card-contact-2 .card-contact2-col .card-body ul li span {
+    color: #FFFFFF;
+}
+
+.card-contact-2 .card-contact2-col .card-body ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    position: relative;
+    margin-left: 6px;
+}
+
+.card-contact-2 .card-contact2-col .card-body ul li .fa-whatsapp {
+    background: #0BBF17;
+    color: #FFFFFF;
+}

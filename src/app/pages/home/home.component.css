@@ -1,9 +1,36 @@
-.counter-up {
+/* card 2 ventajas*/
+
+.card2 {
+    align-items: center;
+    border: 1px solid #7FB3D5;
+    border-radius: 10px;
+}
+
+.card2 .card2-col .card-body ul {
+    list-style: none;
+}
+
+.card2 .card-body ul li {
+    padding: 3px;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-weight: 600;
+}
+
+.card2 .card-body ul li .fas,
+.fa-check {
+    color: #AED6F1;
+}
+
+
+/* card-3 estadisticas */
+
+.card3 {
     --counter-up: rgba(255, 255, 255, 0.6);
     --content: #87bee0;
 }
 
-.counter-up {
+.card3 {
     background: var(--counter-up);
     min-height: 50vh;
     padding: 0 15px;
@@ -13,7 +40,7 @@
     border-radius: 5px;
 }
 
-.counter-up .content {
+.card3 .content {
     z-index: 1;
     position: relative;
     display: flex;
@@ -25,7 +52,7 @@
     background: var(--content);
 }
 
-.counter-up .content .box {
+.card3 .content .box {
     width: calc(25% - 30px);
     display: flex;
     align-items: center;
@@ -57,17 +84,17 @@
 }
 
 @media screen and (max-width: 1036px) {
-    .counter-up {
+    .card3 {
         padding: 50px 50px 0 50px;
     }
-    .counter-up .content .box {
+    .card3 .content .box {
         width: calc(50% - 30px);
         margin-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 580px) {
-    .counter-up .content .box {
+    .card3 .content .box {
         width: 100%;
     }
 }
@@ -76,57 +103,57 @@
     .wrapper {
         padding: 20px;
     }
-    .counter-up {
+    .card3 {
         padding: 30px 20px 0 20px;
     }
 }
 
 
-/*Card-2*/
+/*Card-4 como vender*/
 
-.card-2 .card-2-title {
+.card-4 .card-4-title {
     text-align: center;
     font-size: 40px;
     position: relative;
     margin-bottom: 30px;
     color: #4a90e2;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.card-2 .fila .columna .card-2-item .card-body .txt-title {
-    font-family: 'Inter';
+.card-4 .fila .columna .card-4-item .card-body .txt-title {
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 35px;
 }
 
-.card-2 .fila .columna .card-2-item .card-body .txt-text {
+.card-4 .fila .columna .card-4-item .card-body .txt-text {
     width: 100%;
-    font-family: 'Inter';
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 15px;
     color: #18191F;
 }
 
-.card-2 .fila .columna .card-2-item {
+.card-4 .fila .columna .card-4-item {
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: all 0.25s;
 }
 
-.card-2 .fila .columna .card-2-item:hover {
+.card-4 .fila .columna .card-4-item:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-2 .fila .columna .card-2-item a {
+.card-4 .fila .columna .card-4-item a {
     font-weight: 500;
     text-decoration: none;
     color: #3498db;
 }
 
-.card-2 .fila .columna .bar {
+.card-4 .fila .columna .bar {
     width: 100px;
     height: 6px;
     position: relative;
@@ -139,7 +166,7 @@
     animation: bar 0.5s;
 }
 
-.card-2 .fila .columna:hover .bar {
+.card-4 .fila .columna:hover .bar {
     display: block;
 }
 
@@ -153,86 +180,50 @@
 }
 
 
-/* card-3 */
+/* card 5 servicios*/
 
-.card-3 .row .col-lg-6 .card-3-title {
-    font-family: 'roboto';
+.card-5 .row .col-lg-6 .card-5-title {
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 64px;
-    /* or 133% */
-    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: "Poppins", sans-serif;
 }
 
-.card-3 .row .col-lg-6 .card-3-txt {
-    font-family: 'Inter';
+.card-5 .row .col-lg-6 .card-5-txt {
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 15px;
     line-height: 32px;
-    /* or 133% */
-    /* Text / Gray 900 */
     color: #18191F;
 }
 
-.card-3 .row .col-lg-6 button {
+.card-5 .row .col-lg-6 button {
     background-color: #64bcf4;
 }
 
 
-/* card-4 */
+/* card-6 */
 
-.card-4 .card-4-title {
-    font-family: 'inter';
+.card-6 .card-6-title {
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
     line-height: 64px;
-    /* identical to box height, or 133% */
-    font-feature-settings: 'salt' on, 'liga' off;
 }
 
-.card-4 .row .col .card-4-tl {
-    font-family: 'inter';
+.card-6 .row .col .card-6-tl {
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
-    /* identical to box height, or 150% */
 }
 
-.card-4 .row .col .card-4-txt {
-    font-family: 'Inter';
+.card-6 .row .col .card-6-txt {
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 26px;
-    /* or 162% */
-    font-feature-settings: 'salt' on, 'liga' off;
 }
-
-
-/* card */
-
-.card-vent {
-    align-items: center;
-    border: 1px solid #7FB3D5;
-    border-radius: 10px;
-}
-
-.card-vent .card-body ul {
-    list-style: none;
-}
-
-.card-vent .card-body ul li {
-    padding: 3px;
-    font-family: 'roboto';
-    font-weight: 800px;
-    color: #000;
-}
-
-.card-vent .card-body ul li .fas,
-.fa-check {
-    color: #AED6F1;
-}
-
-.card-vent {}

@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
 
 @Component({
@@ -6,12 +6,16 @@ import { NgwWowService } from 'ngx-wow';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', "./lading-page.css"]
 })
-export class HomeComponent   {
+export class HomeComponent implements OnInit  {
 
   constructor(private wowService: NgwWowService) {
     this.wowService.init();
   }
   
+
+  ngOnInit(): void {
+      
+  }
 
   clientes: number=1000;
   ventas: number=0;
