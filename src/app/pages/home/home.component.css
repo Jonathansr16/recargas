@@ -4,7 +4,7 @@
     align-items: center;
     border: 1px solid #7FB3D5;
     border-radius: 10px;
-    background-color: #FFFFFF;
+    background-color: #FFF;
 }
 
 .card2 .card2-col .card-body ul {
@@ -15,7 +15,7 @@
     padding: 3px;
     font-family: "Poppins", sans-serif;
     color: #000;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .card2 .card-body ul li .fas,
@@ -26,89 +26,63 @@
 
 /* card-3 estadisticas */
 
-.card3 {
-    --counter-up: rgba(255, 255, 255, 0.6);
-    --content: #87bee0;
-}
-
-.card3 {
-    background: var(--counter-up);
-    min-height: 50vh;
-    padding: 0 15px;
+.records {
     position: relative;
-    display: flex;
-    align-items: center;
+    background-color: #784cfb;
+    padding: 5.2rem 0;
     border-radius: 5px;
 }
 
-.card3 .content {
-    z-index: 1;
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
+.records .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    justify-content: space-between;
-    background: var(--content);
-}
-
-.card3 .content .box {
-    width: calc(25% - 30px);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    padding: 15px;
-}
-
-.content .box .icon {
-    font-size: 48px;
-    width: 75px;
-    padding-bottom: 25px;
-}
-
-.content .box .counter {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    line-height: 64px;
-    font-size: 50px;
-    font-weight: 800;
-    color: #fff;
-}
-
-.content .box .text {
-    font-weight: 700;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
+    justify-content: center;
     text-align: center;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+.record-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+}
+
+.record-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 2.35rem;
+}
+
+.sub-title {
+    font-weight: 400;
+    font-size: 1.12rem;
+    text-transform: uppercase;
 }
 
 
 /*Card-4 como vender*/
 
-.card-4 .card-4-title {
-    text-align: center;
-    font-size: 40px;
-    position: relative;
-    margin-bottom: 30px;
-    color: #4a90e2;
+.card-4 .text {
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
-}
-
-.card-4 .fila .columna .card-4-item .card-body .txt-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.card-4 .fila .columna .card-4-item .card-body .txt-text {
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    color: #18191F;
 }
 
 .card-4 .fila .columna .card-4-item {
@@ -146,13 +120,9 @@
     display: block;
 }
 
-@keyframes bar {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 100px;
-    }
+.card-5 .text {
+    font-weight: bold;
+    font-family: '';
 }
 
 
@@ -209,7 +179,36 @@
 }
 
 
+/* Animaciones */
+
+@keyframes bar {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+
 /* Responsive */
+
+@media (max-width: 1280px) {
+    .record-circle {
+        width: 150px;
+        height: 150px;
+        border-width: 3px;
+    }
+    .record-circle .number {
+        font-size: 1.8rem;
+    }
+    .record-circle .sub-title {
+        font-size: 0.9rem;
+    }
+    .section-header .text {
+        max-width: 500px;
+    }
+}
 
 @media screen and (max-width: 1036px) {
     .card3 {
@@ -221,9 +220,25 @@
     }
 }
 
+@media (max-width: 850px) {
+    .records .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (max-width: 580px) {
     .card3 .content .box {
         width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .records .container {
+        grid-template-columns: 1fr;
+    }
+    .records .half-circle {
+        top: 50%;
+        left: 50px;
     }
 }
 

@@ -1,3 +1,87 @@
+.section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header .text {
+    max-width: 600px;
+    margin: 0 auto !important;
+    font-family: "Poppins", sans-serif;
+    color: #7a7a7a;
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.title:before {
+    content: attr(data-title);
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #784cfb;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #784cfb;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    font-size: 1.25rem;
+    color: #7a7a7a;
+    line-height: 1.6;
+}
+
 body {
     background-color: #f1f8fc;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1280px) {
+    .title {
+        font-size: 2.1rem;
+        padding-bottom: 0.65rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+    .title:before {
+        margin-bottom: 0.2rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    .title:after {
+        height: 3.5px;
+        width: 70px;
+    }
+    .section-header .text {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 560px) {
+    .title {
+        font-size: 1.8rem;
+    }
+    .text {
+        font-size: 0.92rem;
+    }
 }

@@ -46,50 +46,54 @@
 </div>
 
 <!-- card-3 estadisticas-->
-<div class="card3 wow animate__animated animate__fadeInUp">
-    <div class="content">
-        <div class="box">
-            <img class="icon" src="../../../assets/images/icon-clientes.png" alt="clientes">
-            <div class="counter text-center">+{{clientes}}</div>
-            <div class="text"> Clientes felices </div>
-        </div>
+<section class="records">
 
-        <div class="box">
-            <img class="icon" src="../../../assets/images/icon-store.png" alt="stores">
-            <div class="counter">+{{ventas}}</div>
-            <div class="text">
-                Puntos de venta
+    <div class="container">
+        <div class="wrap">
+            <div class="record-circle">
+                <h2 class="number" data-num="235">+{{clientes}}</h2>
+                <h4 class="sub-title">Clientes Felices</h4>
             </div>
         </div>
 
-        <div class="box">
-            <img class="icon" src="../../../assets/images/icon-empresas.png" alt="servicios">
-            <div class="counter">+{{productos}}</div>
-            <div class="text">
-                Servicios
+        <div class="wrap">
+            <div class="record-circle active">
+                <h2 class="number" data-num="174">+{{ventas}}</h2>
+                <h4 class="sub-title">Puntos de Venta</h4>
             </div>
         </div>
 
-        <div class="box">
-            <img class="icon" src="../../../assets/images/icon-employees.png" alt="stores">
-            <div class="counter">+{{anos}}</div>
-            <div class="text">
-                Años en el mercado
+        <div class="wrap">
+            <div class="record-circle">
+                <h2 class="number" data-num="892">+{{productos}}</h2>
+                <h4 class="sub-title">Servicios</h4>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="record-circle">
+                <h2 class="number" data-num="368">+{{anos}}</h2>
+                <h4 class="sub-title">Años en el Mercado</h4>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- card 4 como vender -->
-<div class="card-4 container mt-5 mb-5 wow animate__animated animate__fadeInUp">
+<div class="container mt-5 mb-5 wow animate__animated animate__fadeInUp card-4">
 
-    <h3 class="card-4-title">¿Como puedo Vender?</h3>
+    <div class="section-header">
+        <h3 class="title" data-title="¿Que Puedo Hacer?">¿Como Puedo Vender?</h3>
+        <p class="text">
+            Elije la mejor forma que se adapte a ti para vender
+        </p>
+    </div>
     <div class="row g-3 fila justify-content-evenly">
 
         <div class="col-12 col-md-6 col-lg-4 columna">
             <div class="bar"></div>
             <div class="card card-4-item">
-                <img src="../../../assets/svg/desktop.svg" alt="desktop" class="card-img-top">
+                <img src="../../../assets/svg/desktop-img.svg" alt="desktop" class="card-img-top">
                 <div class="card-body">
                     <p class="card-title txt-title">Desktop</p>
                     <p class="card-text txt-text">Recarga & paga servicios de cualquier compañia desde tu computadora</p>
@@ -134,7 +138,7 @@
         </div>
         <div class="col-lg-6">
             <h4 class="card-5-title display-5 fw-bold lh-1 mb-3">Recarga & Paga Servicios De Cualquier Compañia</h4>
-            <p class="card-5-txt lead">Ofrecemos la venta de tiempo aire de celulares de las principales compañías de México. Usted puede vender tiempo aire desde su tienda, farmacia, ciber, casa, etc. únicamente necesita tener un dispositivo con acceso a Internet (pagina web)
+            <p class="text lead">Ofrecemos la venta de tiempo aire de celulares de las principales compañías de México. Usted puede vender tiempo aire desde su tienda, farmacia, ciber, casa, etc. únicamente necesita tener un dispositivo con acceso a Internet (pagina web)
                 o un celular para la venta vía mensaje de texto. No esperes mas y contrata nuestros servicios e incrementa tus ventas considerablemente con esta gran oportunidad de atraer nuevos clientes a tu negocio.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -144,9 +148,11 @@
     </div>
 </div>
 
-<!-- card 6 -->
+<!-- card 6 Proceso de inscripcion -->
 <div class="card-6 container px-4 py-5" id="hanging-icons">
-    <p class="card-6-title pb-2 border-bottom">Proceso de Inscripción</p>
+    <div class="section-header">
+        <h3 class="title" data-title="Proceso De Incripcion">¿Como Me Inscribo?</h3>
+    </div>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
             <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
