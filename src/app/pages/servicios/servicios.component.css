@@ -1,3 +1,40 @@
+/* card */
+
+#serv-card .serv-title {
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    color: #000;
+    font-size: 25px;
+    width: 35ch;
+    animation: typing 2s steps(35), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    margin: auto;
+}
+
+#serv-card .serv-text {
+    font-family: 'roboto';
+    color: #999;
+}
+
+
+/* animation */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+/* swiper */
+
 .swiper {
     width: 240px;
     height: 320px;

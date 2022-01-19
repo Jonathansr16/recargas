@@ -4,6 +4,7 @@
     align-items: center;
     border: 1px solid #7FB3D5;
     border-radius: 10px;
+    background-color: #FFFFFF;
 }
 
 .card2 .card2-col .card-body ul {
@@ -83,31 +84,6 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1036px) {
-    .card3 {
-        padding: 50px 50px 0 50px;
-    }
-    .card3 .content .box {
-        width: calc(50% - 30px);
-        margin-bottom: 50px;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .card3 .content .box {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .wrapper {
-        padding: 20px;
-    }
-    .card3 {
-        padding: 30px 20px 0 20px;
-    }
-}
-
 
 /*Card-4 como vender*/
 
@@ -182,6 +158,10 @@
 
 /* card 5 servicios*/
 
+.card-5 {
+    background-color: #FFFFFF;
+}
+
 .card-5 .row .col-lg-6 .card-5-title {
     font-style: normal;
     font-weight: 900;
@@ -226,4 +206,32 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 26px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1036px) {
+    .card3 {
+        padding: 50px 50px 0 50px;
+    }
+    .card3 .content .box {
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .card3 .content .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        padding: 20px;
+    }
+    .card3 {
+        padding: 30px 20px 0 20px;
+    }
 }
