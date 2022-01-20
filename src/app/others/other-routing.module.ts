@@ -5,9 +5,14 @@ import { FaqsComponent } from './faqs/faqs.component';
 
 
 const routes: Routes = [
-   
-      { path: 'nosotros', component: NosotrosComponent},
-      { path: 'faqs', component: FaqsComponent }
+    {
+        path: '',
+        children: [
+            { path: 'nosotros', component: NosotrosComponent},
+            { path: 'faqs', component: FaqsComponent }
+        ]
+    }
+     
 ];
 
 @NgModule({

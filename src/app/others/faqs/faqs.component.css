@@ -68,6 +68,17 @@ h1 {
 }
 
 
+/* FAQS-recargas */
+
+.recargas-container .recargas-title {
+    color: #FA4D56;
+}
+
+.recargas-container .recarga-icon {
+    background: #D35400;
+}
+
+
 /* FAQS-inscripcion */
 
 .inscripcion-container .inscripcion-title {
@@ -76,4 +87,15 @@ h1 {
 
 .inscripcion-container .inscripcion-icon {
     background-color: #8A3FFC;
+}
+
+
+/* FAQS-plataforma */
+
+.plataforma-container .plataforma-title {
+    color: #F9D726;
+}
+
+.plataforma-container .plataforma-icon {
+    background-color: #F1C21B;
 }

@@ -6,12 +6,12 @@ import { OtherRoutingModule } from '../others/other-routing.module';
 import { PagesRoutingModule } from '../pages/pages.routing.module';
 
 
-
 const routes: Routes = [
 
-    //path: '/dashboard' PagesRouting
-    //path: '/auth' AuthRouting
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'pages', loadChildren: () => import( '../pages/pages.module').then(m => m.PagesModule)},
+    { path: 'others', loadChildren: () => import('../others/others.module').then(m => m.OthersModule)},
+
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
  
 ];
 

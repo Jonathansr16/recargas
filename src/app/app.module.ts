@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 
 //compnentes
 import { AppComponent } from './app.component';
-import { PagesModule } from './pages/pages.module';
-//rutas
-import { AppRoutingModule } from './routers/app-routing.module';
 
-//Modulos
+
+//modulos
+
 import { ComponentModule } from './components/component.module';
+import { AppRoutingModule } from './routers/app-routing.module';
 import { SharedModule } from './shared/shared.module';
-import { NgwWowModule } from 'ngx-wow';
-
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -21,12 +19,10 @@ import { NgwWowModule } from 'ngx-wow';
   imports: [
    ComponentModule,
    BrowserModule,
-   RouterModule,
    AppRoutingModule,
-   PagesModule,
    SharedModule,
-   NgwWowModule,
-   
+   PagesModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

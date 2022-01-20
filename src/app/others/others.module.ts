@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { FaqsComponent } from './faqs/faqs.component';
+
+//modudles
+import { OtherRoutingModule } from './other-routing.module';
 
 
 @NgModule({
@@ -10,7 +15,9 @@ import { FaqsComponent } from './faqs/faqs.component';
     FaqsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    OtherRoutingModule,
+  
   ], exports: [
     NosotrosComponent,
     FaqsComponent

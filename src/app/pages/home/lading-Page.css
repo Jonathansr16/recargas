@@ -1,10 +1,8 @@
-/* styles loading */
-
 .light {
     --mainColor: #64bcf4;
     --hoverColor: #5bacdf;
     --backgroundColor: #f1f8fc;
-    --darkOne: #312f3a;
+    --darkOne: #333;
     --darkTwo: #45424b;
     --lightOne: #919191;
     --lightTwo: #aaa;
@@ -79,13 +77,14 @@ a {
     line-height: 1.4;
 }
 
-.text {
-    color: var(--lightOne);
-    font-size: 1.1rem;
+#lading-page .inscripcion-text {
+    color: #7a7a7a;
+    font-size: 18px;
     margin: 1.9rem 0 2.5rem;
     max-width: 600px;
     line-height: 2.3;
     font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 
 .showcase-area .btn-insc {

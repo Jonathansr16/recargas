@@ -7,13 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
 import { ReportesComponent } from './reportes/reportes.component';
 import { ServiciosComponent } from './servicios/servicios.component';
-
+import { PagesComponent } from './pages.component';
 
 //Modulos
-import { SharedModule } from '../shared/shared.module';
+import { PagesRoutingModule } from './pages.routing.module';
 import { SwiperModule } from 'swiper/angular';
-
-
+import { NgwWowModule } from 'ngx-wow';
 
 @NgModule({
   declarations: [
@@ -21,20 +20,21 @@ import { SwiperModule } from 'swiper/angular';
     InscripcionComponent,
     ReportesComponent,
     ServiciosComponent,
-
+    PagesComponent
   ],
   imports: [
     CommonModule,
-    SharedModule,
     SwiperModule,
+    NgwWowModule,
     RouterModule,
-
+    PagesRoutingModule
   ],
   exports: [
     HomeComponent,
     InscripcionComponent,
     ReportesComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    PagesComponent
   ]
 })
 export class PagesModule { }
