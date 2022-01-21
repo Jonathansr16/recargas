@@ -1,0 +1,101 @@
+h1 {
+    align-items: center;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.accordion-button {
+    margin-bottom: 10px;
+}
+
+.accordion-body {
+    margin-top: 15px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.circle-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b4eff;
+    border: 5px solid #b2bfff;
+    color: #fff;
+    margin-left: -20px;
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.accordion-item {
+    border: 0px! important;
+}
+
+.accordion-button:not(.collapsed) {
+    border: 0px !important;
+    color: #0c63e4;
+    background-color: #ffffff;
+    box-shadow: inset 0 0px 0 rgb(0 0 0 / 13%);
+}
+
+
+/* FAQS-comision */
+
+.comision-container .comision-title {
+    color: #24A148;
+}
+
+.comision-container .comision-icon {
+    background: #24A148;
+}
+
+
+/* FAQS-depositos */
+
+.depositos-container .depositos-title {
+    color: #0F62FE;
+}
+
+.depositos-container .depositos-icon {
+    background: #0F62FE;
+}
+
+
+/* FAQS-recargas */
+
+.recargas-container .recargas-title {
+    color: #FA4D56;
+}
+
+.recargas-container .recarga-icon {
+    background: #D35400;
+}
+
+
+/* FAQS-inscripcion */
+
+.inscripcion-container .inscripcion-title {
+    color: #6C63FF;
+}
+
+.inscripcion-container .inscripcion-icon {
+    background-color: #8A3FFC;
+}
+
+
+/* FAQS-plataforma */
+
+.plataforma-container .plataforma-title {
+    color: #F9D726;
+}
+
+.plataforma-container .plataforma-icon {
+    background-color: #F1C21B;
+}
