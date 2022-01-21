@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 //Components
@@ -10,7 +9,7 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { PagesComponent } from './pages.component';
 
 //Modulos
-import { PagesRoutingModule } from './pages.routing.module';
+import { SharedModule } from '../shared/shared.module';
 import { SwiperModule } from 'swiper/angular';
 import { NgwWowModule } from 'ngx-wow';
 
@@ -23,11 +22,10 @@ import { NgwWowModule } from 'ngx-wow';
     PagesComponent
   ],
   imports: [
-    CommonModule,
     SwiperModule,
     NgwWowModule,
     RouterModule,
-    PagesRoutingModule
+    SharedModule
   ],
   exports: [
     HomeComponent,
