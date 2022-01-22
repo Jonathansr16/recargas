@@ -7,6 +7,11 @@
     background-color: #FFF;
 }
 
+.card2 .title {
+    font-size: 23px;
+    font-weight: 600;
+}
+
 .card2 .card2-col .card-body ul {
     list-style: none;
 }

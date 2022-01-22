@@ -1,3 +1,10 @@
+/* Estilos Generales */
+
+.title-2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
 .swiper {
     width: 240px;
     height: 320px;
@@ -67,8 +74,6 @@
     background-color: #FFF;
     border: 1px solid #0583F2;
 }
-
-.card-sev-1 .card-sev-texts .card-sev-sev-title {}
 
 
 /* services card-2 */

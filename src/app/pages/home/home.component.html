@@ -12,7 +12,7 @@
                         Vende Recargas (Por Internet, WhatsApp, desde tu Smarphone) o via SMS gratuito.
                     </p>
                     <div class="cta">
-                        <a href="#" class="btn-insc">Inscribirme</a>
+                        <a [routerLink]="['inscripcion']" class="btn-insc">Inscribirme</a>
                     </div>
                 </div>
 
@@ -27,17 +27,22 @@
 
 <!-- card-2 Ventajas -->
 <div class="card2 row g-0 mt-5 mb-5 wow animate__animated animate__fadeInUp">
+    <div class="section-header mt-3">
+        <h2 class="title" data-title="Beneficios">¿Porque te conviene quedarte con nosotros?</h2>
+    </div>
     <div class="col-md-8">
-
         <img src="../../../assets/images/banner_ventajas.png" class="img-fluid rounded-start" alt="...">
     </div>
     <div class="card2-col col-md-4">
         <div class="card-body">
-            <h5 class="card-title">¿Porque te conviene quedarte con nosotros?</h5>
+
+            <!-- <p class="title">¿Porque te conviene quedarte con nosotros?</p> -->
             <ul>
                 <li class="text"> <span class="fas fa-check"></span> Ofrecemos una comision fija</li>
                 <li class="text"> <span class="fas fa-check"></span> Estamos en Constante Innovación! agregando compañías de venta de tiempo aire y pago de servicios. </li>
                 <li class="text"> <span class="fas fa-check"></span> Ofrecemos nuestros servicios en toda la republica mexicana</li>
+                <li class="text"> <span class="fas fa-check"></span> Recarga cuando quieras y puedas</li>
+                <li class="text"> <span class="fas fa-check"></span> Sin cobro de inscripcion ni anualidades</li>
                 <li class="text"> <span class="fas fa-check"></span> Atención al cliente eficaz</li>
             </ul>
         </div>
@@ -45,44 +50,44 @@
 </div>
 
 <!-- card-3 estadisticas-->
-<section class="records wow animate__animated animate__fadeInUp">
+<div class="records wow animate__animated animate__fadeInUp">
 
     <div class="container">
         <div class="wrap">
             <div class="record-circle">
-                <h2 class="number" data-num="235">+{{clientes}}</h2>
-                <h4 class="sub-title">Clientes Felices</h4>
+                <p class="number" data-num="235">+{{clientes}}</p>
+                <p class="sub-title">Clientes Felices</p>
             </div>
         </div>
 
         <div class="wrap">
             <div class="record-circle active">
-                <h2 class="number" data-num="174">+{{ventas}}</h2>
-                <h4 class="sub-title">Puntos de Venta</h4>
+                <p class="number" data-num="174">+{{ventas}}</p>
+                <p class="sub-title">Puntos de Venta</p>
             </div>
         </div>
 
         <div class="wrap">
             <div class="record-circle">
-                <h2 class="number" data-num="892">+{{productos}}</h2>
-                <h4 class="sub-title">Servicios</h4>
+                <p class="number" data-num="892">+{{productos}}</p>
+                <p class="sub-title">Servicios</p>
             </div>
         </div>
 
         <div class="wrap">
             <div class="record-circle">
-                <h2 class="number" data-num="368">+{{anos}}</h2>
-                <h4 class="sub-title">Años en el Mercado</h4>
+                <p class="number" data-num="368">+{{anos}}</p>
+                <p class="sub-title">Años en el Mercado</p>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <!-- card 4 como vender -->
 <div class="container mt-5 mb-5 card-4 wow animate__animated animate__fadeInUp">
 
     <div class="section-header">
-        <h3 class="title" data-title="¿Que Puedo Hacer?">¿Como Puedo Vender?</h3>
+        <h2 class="title" data-title="Metodos de Venta">¿Como Puedo Vender?</h2>
         <p class="text">
             Elije la mejor forma que se adapte a ti para vender
         </p>
@@ -92,11 +97,11 @@
         <div class="col-12 col-md-6 col-lg-4 columna">
             <div class="bar"></div>
             <div class="card card-4-item">
-                <img src="../../../assets/svg/desktop-img.svg" alt="desktop" class="card-img-top">
+                <img src="../../../assets/images/svg/desktop.svg" alt="desktop" class="card-img-top">
                 <div class="card-body">
                     <p class="card-title text">Desktop</p>
                     <p class="card-text txt-text">Recarga & paga servicios de cualquier compañia desde tu computadora</p>
-                    <a routerLink="servicios">Leer Mas...</a>
+                    <!-- <a routerLink="servicios">Leer Mas...</a> -->
                 </div>
             </div>
         </div>
@@ -105,11 +110,11 @@
         <div class="col-12 col-md-6 col-lg-4 columna">
             <div class="bar"></div>
             <div class="card card-4-item">
-                <img src="../../../assets/svg/phone.svg" alt="phone" class="card-img-top">
+                <img src="../../../assets/images//svg/phone.svg" alt="phone" class="card-img-top">
                 <div class="card-body">
                     <p class="card-title text">SmartPhone</p>
                     <p class="card-text txt-text">Descarga la aplicación desde la AppStore o PlayStore</p>
-                    <a class="enlace" href="#">Leer Mas...</a>
+                    <!-- <a class="enlace" href="#">Leer Mas...</a> -->
                 </div>
             </div>
         </div>
@@ -118,11 +123,11 @@
         <div class="col-12 col-md-6 col-lg-4 columna">
             <div class="bar"></div>
             <div class="card card-4-item">
-                <img src="../../../assets/svg/sms.svg" alt="sms" class="card-img-top">
+                <img src="../../../assets/images//svg/sms.svg" alt="sms" class="card-img-top">
                 <div class="card-body">
                     <p class="card-title text">SMS</p>
                     <p class="card-text txt-text">Desde tu telefono movil realiza recargas enviando un simple SMS</p>
-                    <a href="#">Leer Mas...</a>
+                    <!-- <a href="#">Leer Mas...</a> -->
                 </div>
             </div>
         </div>
@@ -141,7 +146,7 @@
                 o un celular para la venta vía mensaje de texto. No esperes mas y contrata nuestros servicios e incrementa tus ventas considerablemente con esta gran oportunidad de atraer nuevos clientes a tu negocio.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Leer Mas</button>
+                <a [routerLink]="['servicios']" class="btn btn-primary btn-lg px-4 me-md-2">Leer Mas</a>
             </div>
         </div>
     </div>
@@ -168,7 +173,8 @@
             </div>
             <div>
                 <p class="card-6-tl">Espera nuestro correo</p>
-                <p class="text">Con los datos que proporciones nosotros te nos pondremos en contacto contigo</p>
+                <p class="text">Con los datos que proporciones, nos pondremos en contacto contigo para brindarte tus datos de acceso a la plataforma
+                </p>
             </div>
         </div>
         <div class="col d-flex align-items-start">
@@ -177,7 +183,7 @@
             </div>
             <div>
                 <p class="card-6-tl">Deposita o Transfiere</p>
-                <p class="text">Verifica en tu portal todas las cuentas </p>
+                <p class="text">Verifica en tu portal todas las cuentas y paga a la banca de tu preferencia </p>
             </div>
         </div>
     </div>
