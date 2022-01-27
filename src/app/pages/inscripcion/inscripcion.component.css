@@ -1,100 +1,21 @@
-.section-header {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
+/* car1 figuras */
 
-.section-header .text {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.title-sm {
-    color: #000;
-    font-weight: 600;
-    font-size: 1.6rem;
-}
-
-.title {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1rem;
-    line-height: 1;
-    font-size: 2.8rem;
-    margin-bottom: 0.6rem;
-}
-
-.title:before {
-    content: attr(data-title);
-    display: block;
-    margin-bottom: 0.4rem;
-    color: #784cfb;
-    font-size: 1.15rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.title:after {
-    content: "";
+.header-shape-1 {
     position: absolute;
-    width: 90px;
-    height: 5px;
-    border-radius: 3px;
-    background-color: #784cfb;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(../../../assets//images//header-shape-1.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 
-.text {
-    font-size: 1.25rem;
-    color: var(--dark-two);
-    line-height: 1.6;
-}
-
-
-/* Services */
-
-.icon {
-    width: 90px;
-    margin-bottom: 1.7rem;
-}
-
-.card .title-sm {
-    line-height: 0.8;
-}
-
-.card .text {
-    font-size: 1.15rem;
-    margin: 1.8rem 0;
-}
-
-.title {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1rem;
-    line-height: 1;
-    font-size: 2.8rem;
-    margin-bottom: 0.6rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.85rem 2rem;
-    background-color: #784cfb;
-    color: var(--light-one);
-    border-radius: 2rem;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #6b44e0;
-}
-
-.btn.small {
-    padding: 0.7rem 1.8rem;
-    font-size: 1rem;
+.header-shape-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }

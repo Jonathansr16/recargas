@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { ScrollComponent } from './scroll/scroll.component';
 
 //Components
 
@@ -9,7 +10,8 @@ import { Router, RouterModule } from '@angular/router';
 @NgModule({
     declarations: [
     
-    ],
+    ScrollComponent
+  ],
 
     imports: [
         BrowserModule,
@@ -17,7 +19,7 @@ import { Router, RouterModule } from '@angular/router';
     ],
 
     exports: [
-   
+      ScrollComponent
     ],
 
     providers: [],

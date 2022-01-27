@@ -1,4 +1,5 @@
-import { Component, OnInit} from '@angular/core';
+import { ClassGetter } from '@angular/compiler/src/output/output_ast';
+import { Component, HostListener, OnInit} from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
 
 @Component({

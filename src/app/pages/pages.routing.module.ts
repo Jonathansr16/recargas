@@ -4,21 +4,23 @@ import { RouterModule, Routes } from '@angular/router';
 
 //Components
 import { ContactoComponent } from './contacto/contacto.component';
-import { FaqsComponent } from './faqs/faqs.component';
 import { HomeComponent } from './home/home.component';
+import { ServiciosComponent } from './servicios/servicios.component';
+import { PagaquiComponent } from './pagaqui/pagaqui.component';
+import { RecargakiComponent } from './recargaki/recargaki.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
+import { FaqsComponent } from './faqs/faqs.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PagesComponent } from './pages.component';
-import { ReportesComponent } from './reportes/reportes.component';
-import { ServiciosComponent } from './servicios/servicios.component';
 
 const routes: Routes = [
       { path: 'home', component: PagesComponent, children: [
         { path: '', component: HomeComponent },
         { path: 'servicios', component: ServiciosComponent },
-        { path: 'inscripcion', component: InscripcionComponent },
-        { path: 'reportes', component: ReportesComponent },
-        { path: 'contacto', component: ContactoComponent},
+        { path: 'pagaqui', component: PagaquiComponent} ,
+        { path: 'recargaki', component: RecargakiComponent } ,
+        { path: 'inscripcion', component: InscripcionComponent } ,
+        { path: 'contacto', component: ContactoComponent },
         { path: 'faqs', component: FaqsComponent},
         { path: 'nosotros', component: NosotrosComponent},
         { path: '', redirectTo: '/home', pathMatch: 'full'}

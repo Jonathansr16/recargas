@@ -5,7 +5,8 @@ import { RouterModule } from '@angular/router';
 //Components
 import { HomeComponent } from './home/home.component';
 import { ServiciosComponent } from './servicios/servicios.component';
-import { ReportesComponent } from './reportes/reportes.component';
+import { PagaquiComponent } from './pagaqui/pagaqui.component';
+import { RecargakiComponent } from './recargaki/recargaki.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FaqsComponent } from './faqs/faqs.component';
@@ -19,12 +20,14 @@ import { NgwWowModule } from 'ngx-wow';
 import { SharedModule } from '../shared/shared.module';
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
-    InscripcionComponent,
-    ReportesComponent,
     ServiciosComponent,
+    PagaquiComponent,
+    RecargakiComponent,
+    InscripcionComponent,
     FaqsComponent,
     ContactoComponent,
     PagesComponent
@@ -39,9 +42,10 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports: [
     HomeComponent,
-    InscripcionComponent,
-    ReportesComponent,
     ServiciosComponent,
+    PagaquiComponent,
+    RecargakiComponent,
+    InscripcionComponent,
     FaqsComponent,
     ContactoComponent,
     PagesComponent

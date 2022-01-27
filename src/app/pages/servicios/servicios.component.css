@@ -76,4 +76,33 @@
 }
 
 
-/* services card-2 */
+/* wave */
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* car1 figuras */
+
+.header-shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(../../../assets//images//header-shape-1.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header-shape-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}

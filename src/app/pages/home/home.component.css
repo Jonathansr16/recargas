@@ -1,4 +1,12 @@
-/* card 2 ventajas*/
+/* btotn */
+
+.button-up:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* fin bootn-up */
 
 .card2 {
     align-items: center;
