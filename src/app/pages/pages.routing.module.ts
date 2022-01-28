@@ -23,7 +23,7 @@ const routes: Routes = [
         { path: 'contacto', component: ContactoComponent },
         { path: 'faqs', component: FaqsComponent},
         { path: 'nosotros', component: NosotrosComponent},
-        { path: '', redirectTo: '/home', pathMatch: 'full'}
+        { path: '', redirectTo: 'home', pathMatch: 'full'}
       ]}
 ];
 
