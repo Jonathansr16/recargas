@@ -6,7 +6,7 @@
     right: 0;
     width: 50%;
     height: 100%;
-    background-image: url(../../../assets/images/svg/header-shape-1.svg);
+    background-image: url(/src/assets/images/svg/header-shape-1.svg);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
