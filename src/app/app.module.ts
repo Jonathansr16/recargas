@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 //modulos
-import { ComponentModule } from './components/component.module';
 import { AppRoutingModule } from './routers/app-routing.module';
 
 @NgModule({
@@ -13,7 +12,6 @@ import { AppRoutingModule } from './routers/app-routing.module';
     AppComponent
   ],
   imports: [
-   ComponentModule,
    BrowserModule,
    AppRoutingModule,
     RouterModule

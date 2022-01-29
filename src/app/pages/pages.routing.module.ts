@@ -14,8 +14,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PagesComponent } from './pages.component';
 
 const routes: Routes = [
-      { path: 'home', component: PagesComponent, children: [
-        { path: '', component: HomeComponent },
+      { path: '', component: PagesComponent, children: [
+        { path: 'home', component: HomeComponent },
         { path: 'servicios', component: ServiciosComponent },
         { path: 'pagaqui', component: PagaquiComponent} ,
         { path: 'recargaki', component: RecargakiComponent } ,
@@ -29,7 +29,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forChild(routes),
     RouterModule
   ],
   exports: [RouterModule]
