@@ -20,7 +20,6 @@ import { NgwWowModule } from 'ngx-wow';
 import { SharedModule } from '../shared/shared.module';
 
 
-
 @NgModule({
   declarations: [
     HomeComponent,
