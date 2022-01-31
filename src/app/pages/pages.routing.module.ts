@@ -10,19 +10,17 @@ import { PagaquiComponent } from './pagaqui/pagaqui.component';
 import { RecargakiComponent } from './recargaki/recargaki.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
 import { FaqsComponent } from './faqs/faqs.component';
-import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PagesComponent } from './pages.component';
 
 const routes: Routes = [
       { path: '', component: PagesComponent, children: [
-        { path: 'home', component: HomeComponent },
-        { path: 'servicios', component: ServiciosComponent },
-        { path: 'pagaqui', component: PagaquiComponent} ,
-        { path: 'recargaki', component: RecargakiComponent } ,
-        { path: 'inscripcion', component: InscripcionComponent } ,
-        { path: 'contacto', component: ContactoComponent },
-        { path: 'faqs', component: FaqsComponent},
-        { path: 'nosotros', component: NosotrosComponent},
+        { path: 'home', component: HomeComponent, data: {titulo: 'Home'} },
+        { path: 'servicios', component: ServiciosComponent, data: {titulo: 'Nuestros Servicios'} },
+        { path: 'pagaqui', component: PagaquiComponent, data: {titulo: 'Reporte de Pagaqui'} } ,
+        { path: 'recargaki', component: RecargakiComponent, data: {titulo: 'Reporte de Recargaki'} } ,
+        { path: 'inscripcion', component: InscripcionComponent, data: {titulo: 'Inscripción'} } ,
+        { path: 'contacto', component: ContactoComponent, data: {titulo: 'Contacto'} },
+        { path: 'faqs', component: FaqsComponent, data: {titulo: 'Preguntas Frecuentes'}},
         { path: '', redirectTo: 'home', pathMatch: 'full'}
       ]}
 ];
