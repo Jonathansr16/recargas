@@ -21,7 +21,7 @@ const routes: Routes = [
         { path: 'inscripcion', component: InscripcionComponent, data: {titulo: 'Inscripción'} } ,
         { path: 'contacto', component: ContactoComponent, data: {titulo: 'Contacto'} },
         { path: 'faqs', component: FaqsComponent, data: {titulo: 'Preguntas Frecuentes'}},
-        { path: '', redirectTo: 'home', pathMatch: 'full'}
+        { path: '**', component: HomeComponent },
       ]}
 ];
 

@@ -12,7 +12,7 @@ import { AppRoutingModule } from './routers/app-routing.module';
     AppComponent
   ],
   imports: [
-   BrowserModule,
+   BrowserModule.withServerTransition({ appId: 'serverApp' }),
    AppRoutingModule,
     RouterModule
   ],
