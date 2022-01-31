@@ -1,5 +1,4 @@
-import { ClassGetter } from '@angular/compiler/src/output/output_ast';
-import { Component, HostListener, OnInit} from '@angular/core';
+import { Component} from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
 
 @Component({
@@ -7,16 +6,13 @@ import { NgwWowService } from 'ngx-wow';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', "./lading-page.css"]
 })
-export class HomeComponent implements OnInit  {
+export class HomeComponent  {
 
   constructor(private wowService: NgwWowService) {
     this.wowService.init();
   }
   
 
-  ngOnInit(): void {
-      
-  }
 
   clientes: number=1000;
   ventas: number=0;
@@ -65,3 +61,4 @@ export class HomeComponent implements OnInit  {
 
 
 }
+
