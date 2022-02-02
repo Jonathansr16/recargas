@@ -4,6 +4,7 @@ import { Component, AfterViewInit} from '@angular/core';
 import { Autoplay, Swiper, EffectCards } from 'swiper'
 // import Swiper core and required modules
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+import { Title } from '@angular/platform-browser';
 
 
 SwiperCore.use([ Autoplay, EffectCoverflow, Pagination]);
@@ -18,31 +19,13 @@ SwiperCore.use([EffectCards]);
 
 export class ServiciosComponent implements AfterViewInit {
   
+  constructor( private title: Title) {
+      title.setTitle('Nuestros Servicios');
+  }
 
   ngAfterViewInit(): void {
     new Swiper('.swiper', {
      
-      // effect: 'coverflow',
-      // grabCursor: true,
-      // centeredSlides: true,
-      // slidesPerView: 'auto',
-      // coverflowEffect: {
-      //   rotate: 50,
-      //   stretch: 0,
-      //   depth: 100,
-      //   modifier: 1,
-      //   slideShadows: true,
-      // },
-      // loop: true,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false
-      // },
-      // pagination: {
-      //   el: '.swiper-pagination',
-      // },
-
-
       effect: 'cards',
       grabCursor: true,
       loop: true,

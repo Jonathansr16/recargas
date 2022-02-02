@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pagaqui',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagaquiComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: Title) {
+
+    title.setTitle('Reporte de Deposito Pagaqui')
+   }
+
 
   ngOnInit(): void {
   }

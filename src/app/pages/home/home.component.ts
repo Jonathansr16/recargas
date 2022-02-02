@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { NgwWowService } from 'ngx-wow';
 
 @Component({
@@ -8,7 +9,9 @@ import { NgwWowService } from 'ngx-wow';
 })
 export class HomeComponent  {
 
-  constructor(private wowService: NgwWowService) {
+  constructor(private title: Title, private wowService: NgwWowService) {
+    
+    title.setTitle('Home')
     this.wowService.init();
   }
   
