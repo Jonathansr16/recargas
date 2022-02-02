@@ -55,7 +55,154 @@ body {
 }
 
 
-/* Responsive */
+/* footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container-foot {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container-foot .sec {
+    margin-right: 30px;
+}
+
+footer .container-foot .sec.aboutus {
+    width: 40%;
+}
+
+footer .container-foot h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container-foot h2:before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #F00;
+}
+
+footer p {
+    color: #999;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background-color: #F00;
+}
+
+.sci li a .fa {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.quicklink {
+    position: relative;
+    width: 25%;
+}
+
+.quicklink ul li {
+    list-style: none;
+}
+
+.quicklink ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklink ul li a:hover {
+    color: #FFF;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #FFF;
+    font-size: 20px;
+    margin-right: 10px
+}
+
+.contact .info li span {
+    text-decoration: none;
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.copyright {
+    width: 100%;
+    background-color: #181818;
+    padding: 8px 180px;
+    text-align: center;
+    color: #999;
+}
+
+
+/* fin footer */
+
+
+/* Responsive text*/
 
 @media (max-width: 1280px) {
     .title {
@@ -78,6 +225,36 @@ body {
         font-size: 1rem;
     }
 }
+
+
+/* fin responsive text */
+
+
+/* footer responsive */
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+    footer .container-foot {
+        flex-direction: column;
+    }
+    footer .container-foot .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container-foot .sec.aboutus,
+    .quicklink,
+    .contact {
+        width: 100%;
+    }
+    .copyright {
+        padding: 8px 40px;
+    }
+}
+
+
+/* fin footer responsive */
 
 @media (max-width: 560px) {
     .title {
