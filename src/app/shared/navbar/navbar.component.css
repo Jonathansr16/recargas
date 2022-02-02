@@ -31,3 +31,13 @@
     color: #fff;
     background: rgba(170, 165, 250);
 }
+
+.img_nav {
+    width: 250px;
+    height: 80px;
+}
+
+.container .text_nav {
+    color: #FFF !important;
+    font-weight: bold;
+}
