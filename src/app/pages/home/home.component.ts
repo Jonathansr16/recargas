@@ -1,6 +1,8 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { NgwWowService } from 'ngx-wow';
+
+
 
 @Component({
   selector: 'app-inicio',
@@ -9,17 +11,19 @@ import { NgwWowService } from 'ngx-wow';
 })
 export class HomeComponent  {
 
+  animar= false;
+
   constructor(private title: Title, private wowService: NgwWowService) {
     
     title.setTitle('Home')
     this.wowService.init();
   }
-  
+
 
 
   clientes: number=1000;
   ventas: number=0;
-  productos:number=0;
+  servicios:number=0;
   anos:number=0;
   
   contador1: any = setInterval( () => {
@@ -45,9 +49,9 @@ export class HomeComponent  {
 
   contador3: any = setInterval( () => {
   
-    this.productos++;
+    this.servicios++;
 
-    if(this.productos == 100) {
+    if(this.servicios == 100) {
         clearInterval(this.contador3);
     }
   }, 10); 
@@ -61,6 +65,7 @@ export class HomeComponent  {
         clearInterval(this.contador4);
     }
   }, 55)
+
 
 
 }

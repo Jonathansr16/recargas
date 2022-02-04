@@ -4,12 +4,10 @@ import { RouterModule } from '@angular/router';
 
 //Components
 import { NavbarComponent } from './navbar/navbar.component';
-import { MinfoComponent } from './minfo/minfo.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    MinfoComponent,
   ],
   imports: [
     CommonModule,
@@ -17,7 +15,6 @@ import { MinfoComponent } from './minfo/minfo.component';
   ],
   exports: [
     NavbarComponent,
-    MinfoComponent,
   ]
 })
 export class SharedModule { }

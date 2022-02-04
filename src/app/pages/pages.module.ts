@@ -37,7 +37,8 @@ import { SharedModule } from '../shared/shared.module';
     NgwWowModule,
     RouterModule,
     SharedModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    
   ],
   exports: [
     HomeComponent,
