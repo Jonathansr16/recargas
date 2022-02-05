@@ -1,3 +1,36 @@
+/* banner servicios */
+
+#serv-card {
+    padding: 0;
+    margin: 0;
+}
+
+.header-shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url(/assets/images/svg/header-shape-1.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header-shape-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+/* Fin banner Servicios */
+
+
+/* Card Servicios */
+
 .title-2 {
     font-weight: 600;
     font-size: 30px;
@@ -71,36 +104,4 @@
 .swiper-slide:nth-child(10n) {
     background-color: #FFF;
     border: 1px solid #0583F2;
-}
-
-
-/* wave */
-
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-
-/* banner servicios */
-
-.header-shape-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-image: url(/assets/images/svg/header-shape-1.svg);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-.header-shape-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
 }

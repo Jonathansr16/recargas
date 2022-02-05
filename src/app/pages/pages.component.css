@@ -59,6 +59,8 @@
      transform: scale(1.1);
      transition: 0.3s;
  }
+ /* fin Buttom WhatsApp */
+ /* Animaciones */
  
  @keyframes efecto {
      0% {
@@ -68,4 +70,3 @@
          box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
      }
  }
- /* Fin Buttom WhatsApp */
