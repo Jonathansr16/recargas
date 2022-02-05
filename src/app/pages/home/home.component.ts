@@ -15,7 +15,7 @@ export class HomeComponent  {
 
   constructor(private title: Title, private wowService: NgwWowService) {
     
-    title.setTitle('Home')
+    title.setTitle('Inicio - Vende Recargas y Paga Servicios de cualquier compañia')
     this.wowService.init();
   }
 
