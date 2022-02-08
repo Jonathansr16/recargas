@@ -10,7 +10,7 @@ export class InscripcionComponent implements OnInit {
 
   constructor(private title: Title) {
 
-    title.setTitle('Inscripción');
+    title.setTitle('Inscripción - Únete a nosotros y haz crecer tu negocio');
    }
 
   ngOnInit(): void {

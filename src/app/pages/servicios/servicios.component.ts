@@ -20,7 +20,7 @@ SwiperCore.use([EffectCards]);
 export class ServiciosComponent implements AfterViewInit {
   
   constructor( private title: Title) {
-      title.setTitle('Nuestros Servicios');
+      title.setTitle('Nuestros Servicios - Conoce todos los servicios que tenemos para ti');
   }
 
   ngAfterViewInit(): void {

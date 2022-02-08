@@ -28,9 +28,6 @@
 
 /* Fin banner Servicios */
 
-
-/* Card Servicios */
-
 .title-2 {
     font-weight: 600;
     font-size: 30px;
@@ -58,50 +55,109 @@
     width: 100%;
 }
 
-.swiper-slide:nth-child(1n) {
+.swiper-slide {
     background-color: #FFF;
+    border: 1px solid #BBD0D8;
 }
 
-.swiper-slide:nth-child(2n) {
-    background-color: #FFF;
+
+/* Recargas */
+
+.telcel {
+    border: 1px solid #2A8CEE;
 }
 
-.swiper-slide:nth-child(3n) {
-    background-color: #FFF;
-    border: 1px solid #A61B34;
+.oui {
+    border: 1px solid #464D5A;
 }
 
-.swiper-slide:nth-child(4n) {
-    background-color: #FFF;
-    border: 1px solid #F2B705;
+.pillofon {
+    border: 1px solid #b45559;
 }
 
-.swiper-slide:nth-child(5n) {
-    background-color: #FFF;
-    border: 1px solid #038C33;
+.unefon {
+    border: 1px solid #FFC300;
 }
 
-.swiper-slide:nth-child(6n) {
-    background-color: #FFF;
-    border: 1px solid #4AA2D9;
+.movistar {
+    border: 1px solid #3EC121;
 }
 
-.swiper-slide:nth-child(7n) {
-    background-color: #FFF;
-    border: 1px solid #D91E1E;
+.att {
+    border: 1px solid #39CDEE;
 }
 
-.swiper-slide:nth-child(8n) {
-    background-color: #FFF;
-    border: 1px solid #70AF30;
+.virgin {
+    border: 1px solid #e3231c;
 }
 
-.swiper-slide:nth-child(9n) {
-    background-color: #FFF;
-    border: 1px solid#F21D2F;
+.week {
+    border: 1px solid #74b22f;
 }
 
-.swiper-slide:nth-child(10n) {
-    background-color: #FFF;
-    border: 1px solid #0583F2;
+.wimotelecom {
+    border: 1px solid #ed1c23;
 }
+
+.gugacom {
+    border: 1px solid #1d8ec1;
+}
+
+
+/* Fin recargas */
+
+
+/*  Servicios */
+
+.telmex {
+    border: 1.5px solid #2A8CEE;
+}
+
+.totalplay {
+    border: 1.5px solid #EE6B2A
+}
+
+.megacable {
+    border: 1px solid #0e6db3;
+}
+
+.cfe {
+    border: 1px solid #1C8317;
+}
+
+.dish {
+    border: 1px solid #EE1212;
+}
+
+.avon {
+    border: 1px solid #B70061;
+}
+
+.televia {
+    border: 1px solid #DAE552;
+}
+
+.tupperware {
+    border: 1px solid #d004a8;
+}
+
+.natura {
+    border: 1px solid #e6a229;
+}
+
+
+/* Fin servicios */
+
+
+/* Inicio tarjetas regalos */
+
+.tarjetas-r .swiper-slide {
+    border: none;
+}
+
+.tarjetas-r .netflix {
+    border: 1px solid #cb0922;
+}
+
+
+/* Fin tarjetas regalos */
