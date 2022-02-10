@@ -8,11 +8,6 @@
     --lightTwo: #aaa;
 }
 
-.stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-}
-
 img {
     width: 100%;
 }
