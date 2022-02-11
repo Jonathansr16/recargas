@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { NgwWowService } from 'ngx-wow';
+import { SeoService } from 'src/app/services/seo.service';
 
 
 
@@ -9,14 +10,25 @@ import { NgwWowService } from 'ngx-wow';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', "./lading-page.css"]
 })
-export class HomeComponent  {
+export class HomeComponent implements OnInit  {
 
   animar= false;
 
-  constructor(private title: Title, private wowService: NgwWowService) {
+  constructor(private title: Title, private wowService: NgwWowService, private seoService: SeoService)  {
     
-    title.setTitle('Inicio - Vende Recargas y Paga Servicios de cualquier compañia')
     this.wowService.init();
+  }
+
+  ngOnInit(): void {
+      let t: string= "Inicio - Vende recargas electrónicas, paga servicios y tarjetas de regalo todo eso en una sola plataforma";
+      this.title.setTitle(t);
+      
+      this.seoService.generarTag({
+        description: "Recargas Electrónicas, pago de servicios y tarjetas de regalo todo con una comisión fija, en todas las compañías: CFE, Telmex, AT&amp;T, Google Play, Netflix y muchos mas",
+        ogtitle: "Vende recargas electrónicas, paga servicios y tarjetas de regalo todo eso en una sola plataforma",
+        ogdescription: "Recargas Electrónicas, pago de servicios y tarjetas de regalo todo con una comisión fija, en todas las compañías: CFE, Telmex, AT&amp;T, Google Play, Netflix y muchos mas",
+        slug: "home"
+      })
   }
 
 

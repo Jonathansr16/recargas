@@ -1,10 +1,11 @@
-import { Component, AfterViewInit} from '@angular/core';
+import { Component, AfterViewInit, OnInit} from '@angular/core';
 
 
 import { Autoplay, Swiper, EffectCards } from 'swiper'
 // import Swiper core and required modules
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import { Title } from '@angular/platform-browser';
+import { SeoService } from 'src/app/services/seo.service';
 
 
 SwiperCore.use([ Autoplay, EffectCoverflow, Pagination]);
@@ -17,10 +18,22 @@ SwiperCore.use([EffectCards]);
 })
 
 
-export class ProductosComponent implements AfterViewInit {
+export class ProductosComponent implements AfterViewInit, OnInit{
   
-  constructor( private title: Title) {
-      title.setTitle('Nuestros Productos - Conoce todos los productos que tenemos para ti');
+  constructor( private title: Title, private seoService: SeoService) { }
+
+
+  ngOnInit(): void {
+      let t:string= "Nuestros Productos - Conoce y vende todos los productos que tenemos para ti";
+      this.title.setTitle(t);
+
+      this.seoService.generarTag({
+        description: "Recargas Electronicas, Pago de Servicios, Tarjetas de regalo: Telcel, Virgin, CFE, Google Play, Netflix, Steam, Nintendo",
+        keywords: "recargas electronicas, recarga telcel, pagar servicio, pagar recibo telmex, tarjeta de regalo, pines electronicos",
+        ogtitle: "Conoce y vende todos los productos que tenemos para ti",
+        ogdescription: "Recargas Electronicas, Pago de Servicios, Tarjetas de regalo: Telcel, Virgin, CFE, Google Play, Netflix, Steam, Nintendo",
+        slug: "productos"
+      })
   }
 
   ngAfterViewInit(): void {
