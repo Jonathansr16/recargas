@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 //Components
 import { HomeComponent } from './home/home.component';
-import { ServiciosComponent } from './servicios/servicios.component';
+import { ProductosComponent } from './productos/productos.component';
 import { PagaquiComponent } from './pagaqui/pagaqui.component';
 import { RecargakiComponent } from './recargaki/recargaki.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
@@ -23,7 +23,7 @@ import { SharedModule } from '../shared/shared.module';
 @NgModule({
   declarations: [
     HomeComponent,
-    ServiciosComponent,
+   ProductosComponent,
     PagaquiComponent,
     RecargakiComponent,
     InscripcionComponent,
@@ -42,7 +42,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports: [
     HomeComponent,
-    ServiciosComponent,
+    ProductosComponent,
     PagaquiComponent,
     RecargakiComponent,
     InscripcionComponent,

@@ -11,16 +11,16 @@ SwiperCore.use([ Autoplay, EffectCoverflow, Pagination]);
 SwiperCore.use([EffectCards]);
 
 @Component({
-  selector: 'app-servicios',
-  templateUrl: './servicios.component.html',
-  styleUrls: ['./servicios.component.css']
+  selector: 'app-productos',
+  templateUrl: './productos.component.html',
+  styleUrls: ['./productos.component.css']
 })
 
 
-export class ServiciosComponent implements AfterViewInit {
+export class ProductosComponent implements AfterViewInit {
   
   constructor( private title: Title) {
-      title.setTitle('Nuestros Servicios - Conoce todos los servicios que tenemos para ti');
+      title.setTitle('Nuestros Productos - Conoce todos los productos que tenemos para ti');
   }
 
   ngAfterViewInit(): void {

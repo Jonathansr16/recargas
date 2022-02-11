@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 //modulos
 import { AppRoutingModule } from './routers/app-routing.module';
+//Tag Manager
+import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,10 @@ import { AppRoutingModule } from './routers/app-routing.module';
   imports: [
    BrowserModule.withServerTransition({ appId: 'serverApp' }),
    AppRoutingModule,
-    RouterModule
+    RouterModule,
+    GoogleTagManagerModule.forRoot({
+      id: 'GTM-T3D7SX5',
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

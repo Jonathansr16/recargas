@@ -8,9 +8,9 @@
                     <div class="big-title">
                         <h1>Gana una comisión fija, En la venta de tiempo aire & pago de servicios</h1>
                     </div>
-                    <p class="text">
+                    <h2 class="text">
                         Vende Recargas (Por Internet, WhatsApp, desde tu Smarphone) o via SMS gratuito.
-                    </p>
+                    </h2>
                     <div class="cta">
                         <a routerLink="/inscripcion" class="btn-insc">Inscribirme</a>
                     </div>
@@ -25,197 +25,207 @@
 </main>
 
 
-<!-- card Ventajas -->
-<div class="card2 row g-0 mt-5 mb-5 wow animate__animated animate__fadeInUp">
-    <div class="section-header mt-3">
-        <h2 class="title" data-title="Beneficios">¿Por qué te conviene quedarte con nosotros?</h2>
-    </div>
-    <div class="col-md-8">
-        <img src="assets/images/banner_ventajas.png" class="img-fluid rounded-start" alt="Ventajas">
-    </div>
-    <div class="card2-col col-md-4">
-        <div class="card-body">
-
-
-            <ul>
-                <li class="text"> <span class="fas fa-check"></span> Ofrecemos una comisión fija</li>
-                <li class="text"> <span class="fas fa-check"></span> Estamos en Constante Innovación! agregando compañías de venta de tiempo aire y pago de servicios. </li>
-                <li class="text"> <span class="fas fa-check"></span> Ofrecemos nuestros servicios en toda la republica mexicana</li>
-                <li class="text"> <span class="fas fa-check"></span> Recarga cuando quieras y puedas</li>
-                <li class="text"> <span class="fas fa-check"></span> Sin cobro de inscripción ni anualidades</li>
-                <li class="text"> <span class="fas fa-check"></span> Atención al cliente eficaz</li>
-            </ul>
+<!--Ventajas -->
+<section class="mt-5 mb-5">
+    <div class="card2 row g-0 wow animate__animated animate__fadeInUp">
+        <div class="section-header mt-3">
+            <h3 class="title" data-title="Beneficios">¿Por qué te conviene quedarte con nosotros?</h3>
         </div>
-    </div>
-</div>
-
-
-
-<!-- card-3 estadisticas-->
-<div class="records wow animate__animated animate__fadeInUp">
-
-    <div class="container">
-        <div class="wrap ocultar">
-            <div class="record-circle">
-                <p class="number" data-num="40000"> +{{ clientes }}</p>
-                <p class="sub-title"> Clientes Felices</p>
-            </div>
+        <div class="col-md-8">
+            <img src="assets/images/banner_ventajas.png" class="img-fluid rounded-start" alt="Ventajas">
         </div>
+        <div class="card2-col col-md-4">
+            <div class="card-body">
 
-        <div class="wrap">
-            <div class="record-circle active">
-                <p class="number" data-num="18000">+{{ ventas }}</p>
-                <p class="sub-title"> Puntos de Venta </p>
-            </div>
-        </div>
 
-        <div class="wrap">
-            <div class="record-circle">
-                <p class="number" data-num="100">+{{ servicios }}</p>
-                <p class="sub-title"> Servicios</p>
-            </div>
-        </div>
-
-        <div class="wrap">
-            <div class="record-circle">
-                <p class="number" data-num="20">+{{ anos }}</p>
-                <p class="sub-title"> Años en el Mercado</p>
+                <ul>
+                    <li class="text"> <span class="fas fa-check"></span> Ofrecemos una comisión fija</li>
+                    <li class="text"> <span class="fas fa-check"></span> Estamos en Constante Innovación! agregando compañías de venta de tiempo aire y pago de servicios. </li>
+                    <li class="text"> <span class="fas fa-check"></span> Ofrecemos nuestros servicios en toda la republica mexicana</li>
+                    <li class="text"> <span class="fas fa-check"></span> Recarga cuando quieras y puedas</li>
+                    <li class="text"> <span class="fas fa-check"></span> Sin cobro de inscripción ni anualidades</li>
+                    <li class="text"> <span class="fas fa-check"></span> Atención al cliente eficaz</li>
+                </ul>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- card 4 como vender -->
-<div class="container mt-5 mb-5 card-4 wow animate__animated animate__fadeInUp">
 
-    <div class="section-header">
-        <p class="title" data-title="Metodos de Venta">¿Cómo Puedo Vender?</p>
-        <p class="text">
-            Elije la mejor forma que se adapte a ti para vender
-        </p>
-    </div>
-    <div class="row g-3 justify-content-evenly fila">
+<!-- estadisticas-->
+<section>
+    <div class="records wow animate__animated animate__fadeInUp">
 
-        <div class="col-12 col-md-6 col-lg-4 columna">
-            <div class="bar"></div>
-            <div class="card card-4-item">
-                <img src="assets/images/svg/desktop.svg" class="card-img-top" alt="desktop">
-                <div class="card-body">
-                    <p class="card-title text">Desktop</p>
-                    <p class="card-text txt-text">Recarga & paga servicios de cualquier compañia desde tu computadora</p>
-
+        <div class="container">
+            <div class="wrap ocultar">
+                <div class="record-circle">
+                    <p class="number" data-num="40000"> +{{ clientes }}</p>
+                    <p class="sub-title"> Clientes Felices</p>
                 </div>
             </div>
-        </div>
 
-
-        <div class="col-12 col-md-6 col-lg-4 columna">
-            <div class="bar"></div>
-            <div class="card card-4-item">
-                <img src="assets/images/svg/phone.svg" class="card-img-top" alt="phone">
-                <div class="card-body">
-                    <p class="card-title text">SmartPhone</p>
-                    <p class="card-text txt-text">Descarga la aplicación desde la AppStore o PlayStore</p>
-
+            <div class="wrap">
+                <div class="record-circle active">
+                    <p class="number" data-num="18000">+{{ ventas }}</p>
+                    <p class="sub-title"> Puntos de Venta </p>
                 </div>
             </div>
-        </div>
 
+            <div class="wrap">
+                <div class="record-circle">
+                    <p class="number" data-num="100">+{{ servicios }}</p>
+                    <p class="sub-title"> Servicios</p>
+                </div>
+            </div>
 
-        <div class="col-12 col-md-6 col-lg-4 columna">
-            <div class="bar"></div>
-            <div class="card card-4-item">
-                <img src="assets/images/svg/sms.svg" class="card-img-top" alt="sms">
-                <div class="card-body">
-                    <p class="card-title text">SMS</p>
-                    <p class="card-text txt-text">Desde tu telefono movil realiza recargas enviando un simple SMS</p>
-
+            <div class="wrap">
+                <div class="record-circle">
+                    <p class="number" data-num="20">+{{ anos }}</p>
+                    <p class="sub-title"> Años en el Mercado</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- card 5 servicios-->
-<div class="card-5 col-xxl-8 px-3 py-2 wow animate__animated animate__fadeInUp">
-    <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-2">
-        <div class="col-10 col-sm-8 col-lg-6">
-            <img src="assets/images/logos_companies.png" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy" alt="compañias">
-        </div>
-        <div class="col-lg-6">
-            <p class="card-5-title lh-1">Recarga & Paga Servicios De Cualquier Compañia</p>
-            <p class="text">Ofrecemos la venta de tiempo aire de celulares de las principales compañías de México. Usted puede vender tiempo aire desde su tienda, farmacia, ciber, casa, etc. únicamente necesita tener un dispositivo con acceso a Internet (pagina web)
-                o un celular para la venta vía mensaje de texto. No esperes mas y contrata nuestros servicios e incrementa tus ventas considerablemente con esta gran oportunidad de atraer nuevos clientes a tu negocio.
+
+<!-- como vender -->
+<section class=" mt-5 mb-5">
+    <div class="container card-4 wow animate__animated animate__fadeInUp">
+
+        <div class="section-header">
+            <h4 class="title" data-title="Metodos de Venta">¿Cómo Puedo Vender?</h4>
+            <p class="text">
+                Elije la mejor forma que se adapte a ti para vender
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a [routerLink]="['/servicios']" class="btn btn-primary btn-lg px-4 me-md-2">Leer Más</a>
-            </div>
         </div>
-    </div>
-</div>
+        <div class="row g-3 justify-content-evenly fila">
 
-<!-- card 6 Proceso de inscripcion -->
-<div class="card-6 container px-4 py-5 wow animate__animated animate__fadeInUp" id="hanging-icons">
-    <div class="section-header">
-        <p class="title" data-title="Proceso De Incripción">¿Cómo Me Inscribo?</p>
-    </div>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <img src="assets/images/icon-registro.png" width="20" height="30" alt="registro">
+            <div class="col-12 col-md-6 col-lg-4 columna">
+                <div class="bar"></div>
+                <div class="card card-4-item">
+                    <img src="assets/images/svg/desktop.svg" class="card-img-top" alt="desktop">
+                    <div class="card-body">
+                        <p class="card-title text">Desktop</p>
+                        <p class="card-text txt-text">Recarga & paga servicios de cualquier compañia desde tu computadora</p>
+
+                    </div>
+                </div>
             </div>
-            <div>
-                <p class="card-6-tl">Llena el formulario</p>
-                <p class="text">Completa el formulario con los datos requeridos en la sección inscripción.</p>
+
+
+            <div class="col-12 col-md-6 col-lg-4 columna">
+                <div class="bar"></div>
+                <div class="card card-4-item">
+                    <img src="assets/images/svg/phone.svg" class="card-img-top" alt="phone">
+                    <div class="card-body">
+                        <p class="card-title text">SmartPhone</p>
+                        <p class="card-text txt-text">Descarga la aplicación desde la AppStore o PlayStore</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 columna">
+                <div class="bar"></div>
+                <div class="card card-4-item">
+                    <img src="assets/images/svg/sms.svg" class="card-img-top" alt="sms">
+                    <div class="card-body">
+                        <p class="card-title text">SMS</p>
+                        <p class="card-text txt-text">Desde tu telefono movil realiza recargas enviando un simple SMS</p>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <img src="assets/images/icon-email.png" width="20" height="30" alt="email">
+    </div>
+</section>
+
+<!-- servicios-->
+<section>
+    <div class="card-5  px-3 py-2 col-xxl-8 wow animate__animated animate__fadeInUp">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-2">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="assets/images/logos_companies.png" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy" alt="compañias">
             </div>
-            <div>
-                <p class="card-6-tl">Espera nuestro correo</p>
-                <p class="text">Con los datos que proporciones, nos pondremos en contacto contigo para brindarte tus datos de acceso a la plataforma.
+            <div class="col-lg-6">
+                <p class="card-5-title lh-1">Recarga & Paga Servicios De Cualquier Compañia</p>
+                <p class="text">Ofrecemos la venta de tiempo aire de celulares de las principales compañías de México. Usted puede vender tiempo aire desde su tienda, farmacia, ciber, casa, etc. únicamente necesita tener un dispositivo con acceso a Internet (pagina web)
+                    o un celular para la venta vía mensaje de texto. No esperes mas y contrata nuestros servicios e incrementa tus ventas considerablemente con esta gran oportunidad de atraer nuevos clientes a tu negocio.
                 </p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <img src="assets/images/icon-login.png" width="30" height="30" alt="login">
-            </div>
-            <div>
-                <p class="card-6-tl">Ingresa a tu plataforma</p>
-                <p class="text"> Ingresa a tu plaforma con tu numero de usuario y contraseña, indicados en el correo. </p>
-            </div>
-        </div>
-        <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <img src="assets/images/icon-credit-card.png" width="20" height="30" alt="credit card">
-            </div>
-            <div>
-                <p class="card-6-tl">Deposita o Transfiere</p>
-                <p class="text tex-center">Verifica en tu portal todas las cuentas y paga a la banca de tu preferencia. </p>
-            </div>
-        </div>
-
-        <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <img src="assets/images/icon-notificacion.png" width="20" height="30" alt="notificación">
-            </div>
-            <div>
-                <p class="card-6-tl">Notifica</p>
-                <p class="text">Notifica tus Depositos & transferencias a tu distribuidor via WhatsApp o en la sección Reportar depositos.</p>
-            </div>
-        </div>
-
-        <div class="col d-flex align-items-start">
-            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <img src="assets/images/icon-recompensa.png" width="20" height="30" alt="beneficios">
-            </div>
-            <div>
-                <p class="card-6-tl">Difruta de los beneficios</p>
-                <p class="text">Obten una comisión por cada venta de recargas, pago de servicios y tarjetas electronicas. </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a [routerLink]="['/productos']" class="btn btn-primary btn-lg px-4 me-md-2">Leer Más</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<!-- Proceso de inscripcion -->
+<section>
+    <div class="card-6 container px-4 py-5 wow animate__animated animate__fadeInUp" id="hanging-icons">
+        <div class="section-header">
+            <p class="title" data-title="Proceso De Incripción">¿Cómo Me Inscribo?</p>
+        </div>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <img src="assets/images/icon-registro.png" width="20" height="30" alt="registro">
+                </div>
+                <div>
+                    <p class="card-6-tl">Llena el formulario</p>
+                    <p class="text">Completa el formulario con los datos requeridos en la sección inscripción.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <img src="assets/images/icon-email.png" width="20" height="30" alt="email">
+                </div>
+                <div>
+                    <p class="card-6-tl">Espera nuestro correo</p>
+                    <p class="text">Con los datos que proporciones, nos pondremos en contacto contigo para brindarte tus datos de acceso a la plataforma.
+                    </p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <img src="assets/images/icon-login.png" width="30" height="30" alt="login">
+                </div>
+                <div>
+                    <p class="card-6-tl">Ingresa a tu plataforma</p>
+                    <p class="text"> Ingresa a tu plaforma con tu numero de usuario y contraseña, indicados en el correo. </p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <img src="assets/images/icon-credit-card.png" width="20" height="30" alt="credit card">
+                </div>
+                <div>
+                    <p class="card-6-tl">Deposita o Transfiere</p>
+                    <p class="text tex-center">Verifica en tu portal todas las cuentas y paga a la banca de tu preferencia. </p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <img src="assets/images/icon-notificacion.png" width="20" height="30" alt="notificación">
+                </div>
+                <div>
+                    <p class="card-6-tl">Notifica</p>
+                    <p class="text">Notifica tus Depositos & transferencias a tu distribuidor via WhatsApp o en la sección Reportar depositos.</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <img src="assets/images/icon-recompensa.png" width="20" height="30" alt="beneficios">
+                </div>
+                <div>
+                    <p class="card-6-tl">Difruta de los beneficios</p>
+                    <p class="text">Obten una comisión por cada venta de recargas, pago de servicios y tarjetas electronicas. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 //Components
 import { ContactoComponent } from './contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
-import { ServiciosComponent } from './servicios/servicios.component';
+import { ProductosComponent } from './productos/productos.component';
 import { PagaquiComponent } from './pagaqui/pagaqui.component';
 import { RecargakiComponent } from './recargaki/recargaki.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
@@ -15,7 +15,7 @@ import { PagesComponent } from './pages.component';
 const routes: Routes = [
       { path: '', component: PagesComponent, children: [
         { path: 'home', component: HomeComponent, data: {titulo: 'Home'} },
-        { path: 'servicios', component: ServiciosComponent, data: {titulo: 'Nuestros Servicios'} },
+        { path: 'productos', component: ProductosComponent, data: {titulo: 'Nuestros Productos'} },
         { path: 'pagaqui', component: PagaquiComponent, data: {titulo: 'Reporte de Pagaqui'} } ,
         { path: 'recargaki', component: RecargakiComponent, data: {titulo: 'Reporte de Recargaki'} } ,
         { path: 'inscripcion', component: InscripcionComponent, data: {titulo: 'Inscripción'} } ,
