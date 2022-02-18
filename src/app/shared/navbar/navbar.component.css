@@ -1,38 +1,74 @@
-.navbar-light {
-    background-color: rgba(124, 199, 246, 1);
-    border-bottom-left-radius: 300px 15px;
-    border-bottom-right-radius: 300px 15px;
-}
-
-.navbar-light .navbar-toggler-icon {
-    font-size: 20px;
-}
-
-.button {
-    background-color: #2EC5CE;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.link {
-    color: #FFF;
-    transition: 0.3s;
-    font-size: 15px;
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.link:hover {
-    color: #fff;
-    background: rgba(170, 165, 250);
-}
-
-.img_nav {
-    height: 80px;
-    width: 100%;
-}
+ .navbar {
+     width: 100%;
+ }
+ 
+ .navbar-light {
+     background-color: rgb(124, 199, 246);
+     border-bottom-left-radius: 300px 15px;
+     border-bottom-right-radius: 300px 15px;
+ }
+ 
+ .nav-pills .nav-link.active,
+ .nav-pills .show>.nav-link:after {
+     color: #FFF;
+     background: rgba(68, 116, 234, 0.8);
+ }
+ 
+ .dropdown-item.active,
+ .dropdown-item:active {
+     color: #FFF;
+     background: rgba(68, 116, 234, 0.8);
+ }
+ 
+ .navbar-light .navbar-toggler-icon {
+     font-size: 20px;
+ }
+ 
+ .link {
+     color: #FFF;
+     position: relative;
+ }
+ 
+ .dropdown-item {
+     position: relative;
+ }
+ 
+ .dropdown-toggle::after {
+     border: none;
+ }
+ 
+ .link:hover {
+     color: #fff;
+     transition: .9s;
+ }
+ 
+ .tebel-sedang {
+     font-weight: bold;
+ }
+ 
+ nav ul li a:after {
+     content: '';
+     position: absolute;
+     left: 50%;
+     bottom: 0;
+     transform: translateX(-50%0) scaleX(0);
+     -webkit-transform: translateX(-50%) scaleX(0);
+     transform-origin: 50% 50%;
+     width: 100%;
+     height: 2px;
+     background-color: #FF002E;
+     -webkit-transition: transform 250ms;
+     transition: transform 250ms;
+ }
+ 
+ nav ul li a:hover:after {
+     -webkit-transform: translateX(-50%) scaleX(1);
+     transform: translateX(-50%) scaleX(1);
+ }
+ /* icon row down */
+ 
+ .icon-row {
+     display: inline-block;
+     margin-left: 0.255em;
+     vertical-align: center;
+ }

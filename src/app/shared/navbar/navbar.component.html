@@ -1,54 +1,46 @@
-<!-- navbar menu -->
-<nav class="mi-nav navbar sticky-top navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
-        <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active">
-            <img src="assets/images/logo_nav.png" class="img_nav" height="26%">
+        <a class="navbar-brand" [routerLink]="['/']">
+            <img src="assets/images/logo_nav2.png" height="70px" class="img_nav" alt="Recargas Electrónicas">
         </a>
-        <button class="navbar-toggler mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="nav nav-pills">
-                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link link tebel-sedang" [routerLink]="['home']">Inicio &nbsp;&nbsp;</a>
+                <li class="nav-item">
+                    <a class="nav-link link tebel-sedang" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio &nbsp;&nbsp;</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link tebel-sedang" [routerLink]="['productos']">Productos &nbsp;&nbsp;</a>
+                    <a class="nav-link link tebel-sedang" [routerLink]="['productos']" routerLinkActive="active">Productos &nbsp;&nbsp;</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle link tebel-sedang" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reportar Depositos &nbsp;&nbsp;</a>
+                    <a class="nav-link dropdown-toggle link tebel-sedang" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reportar Depositos &nbsp;&nbsp;
+                        <i class="icon-row fa fa-solid fa-caret-down"></i>
+                    </a>
 
                     <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" [routerLink]="['pagaqui']">PagaQui</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['recargaki']">Recargaki / Planetaemx</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['pagaqui']" routerLinkActive="active">PagaQui</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['recargaki']" routerLinkActive="active">Recargaki / Planetaemx</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link tebel-sedang" [routerLink]="['inscripcion']">Inscripción &nbsp;&nbsp;</a>
+                    <a class="nav-link link tebel-sedang" [routerLink]="['inscripcion']" routerLinkActive="active">Inscripción &nbsp;&nbsp;</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link link tebel-sedang" [routerLink]="['contacto']">Contacto &nbsp;&nbsp;</a>
+                    <a class="nav-link link tebel-sedang" [routerLink]="['contacto']" routerLinkActive="active">Contacto &nbsp;&nbsp;</a>
                 </li>
-
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Ayuda
+                    <a class="nav-link dropdown-toggle link tebel-sedang" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  Ayuda
+                        <i class="icon-row fa fa-solid fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" [routerLink]="['faqs']">Preguntas Frecuentes</a></li>
-
+                        <li><a class="dropdown-item" [routerLink]="['faqs']" routerLinkActive="active">Preguntas Frecuentes &nbsp;&nbsp;</a></li>
                     </ul>
                 </li>
-
-
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link link tebel-sedang" [routerLink]="['contacto']">Contacto &nbsp;&nbsp;</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link active tebel-sedang rounded-pill bg-ungu shadow" href="#"> Inscribirme </a>
-                </li> -->
             </ul>
         </div>
     </div>
+
+    <div class="animate start-home"></div>
 </nav>

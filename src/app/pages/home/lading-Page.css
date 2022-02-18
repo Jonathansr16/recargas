@@ -43,19 +43,22 @@ a {
     margin-top: -0.6rem;
 }
 
-.btn-insc {
+main .cta a.btn-insc {
     display: inline-block;
     padding: 0.9rem 1.9rem;
-    color: #fff !important;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
     background-color: var(--mainColor);
     border-radius: 16px;
     text-transform: capitalize;
     transition: 0.3s;
 }
 
-.btn-insc:hover {
+a.btn-insc:hover {
     background-color: var(--hoverColor);
-    transform: scale(1) !important;
+    transform: scale(1);
 }
 
 .showcase-area .container {
@@ -65,7 +68,7 @@ a {
     justify-content: center;
 }
 
-.big-title {
+div.big-title {
     font-size: 1.4rem;
     color: var(--darkOne);
     text-transform: capitalize;
