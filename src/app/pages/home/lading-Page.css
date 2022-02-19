@@ -2,10 +2,6 @@
     --mainColor: #64bcf4;
     --hoverColor: #5bacdf;
     --backgroundColor: #f1f8fc;
-    --darkOne: #333;
-    --darkTwo: #45424b;
-    --lightOne: #919191;
-    --lightTwo: #aaa;
 }
 
 img {
@@ -14,6 +10,14 @@ img {
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
 }
 
 .big-wrapper {
@@ -49,7 +53,6 @@ main .cta a.btn-insc {
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-    font-weight: bold;
     background-color: var(--mainColor);
     border-radius: 16px;
     text-transform: capitalize;
@@ -68,11 +71,12 @@ a.btn-insc:hover {
     justify-content: center;
 }
 
-div.big-title {
+.big-title {
     font-size: 1.4rem;
     color: var(--darkOne);
     text-transform: capitalize;
     line-height: 1.4;
+    font-weight: bold;
 }
 
 #lading-page .inscripcion-text {
@@ -133,9 +137,10 @@ div.big-title {
     }
     .big-title {
         font-size: 1.1rem;
+        font-weight: bold;
     }
     .text {
-        font-size: 0.95rem;
+        font-size: 1rem;
         margin: 1.4rem 0 1.5rem;
     }
     .person {

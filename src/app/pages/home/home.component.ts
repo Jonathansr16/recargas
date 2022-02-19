@@ -12,7 +12,7 @@ import { SeoService } from 'src/app/services/seo.service';
 })
 export class HomeComponent implements OnInit  {
 
-  animar= false;
+ 
 
   constructor(private title: Title, private wowService: NgwWowService, private seoService: SeoService)  {
     
@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit  {
     if(this.clientes == 40000) {
         clearInterval(this.contador1);
     }
-  },20);
+  },40);
 
 
   
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit  {
     if(this.ventas == 1800) {
         clearInterval(this.contador2);
     }
-  }, 10);
+  }, 40);
 
 
   contador3: any = setInterval( () => {
@@ -66,7 +66,7 @@ export class HomeComponent implements OnInit  {
     if(this.servicios == 100) {
         clearInterval(this.contador3);
     }
-  }, 10); 
+  }, 40); 
 
 
  contador4: any = setInterval( () => {
@@ -76,7 +76,7 @@ export class HomeComponent implements OnInit  {
     if(this.anos == 20) {
         clearInterval(this.contador4);
     }
-  }, 55)
+  }, 200)
 
 
 
