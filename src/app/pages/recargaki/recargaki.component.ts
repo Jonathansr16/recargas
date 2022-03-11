@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { SeoService } from 'src/app/services/seo.service';
 
@@ -7,13 +7,10 @@ import { SeoService } from 'src/app/services/seo.service';
   templateUrl: './recargaki.component.html',
   styleUrls: ['./recargaki.component.css']
 })
-export class RecargakiComponent implements OnInit {
+export class RecargakiComponent {
 
   constructor(private title: Title, private seoService: SeoService) { 
-    title.setTitle('Repote de Deposito Recargaki/Planetaemx')
-  }
-
-  ngOnInit(): void {
+  
     let t:string = "Repote de Deposito Recargaki/Planetaemx";
     this.title.setTitle(t);
 
@@ -25,5 +22,6 @@ export class RecargakiComponent implements OnInit {
       slug: "recargaki"
     })
   }
+
 
 }

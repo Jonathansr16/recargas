@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnInit} from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 
 import { Autoplay, Swiper, EffectCards } from 'swiper'
@@ -18,23 +18,21 @@ SwiperCore.use([EffectCards]);
 })
 
 
-export class ProductosComponent implements AfterViewInit, OnInit{
+export class ProductosComponent implements AfterViewInit{
   
-  constructor( private title: Title, private seoService: SeoService) { }
+  constructor( private title: Title, private seoService: SeoService) { 
+    let t:string= "Nuestros Productos - Conoce y vende todos los productos que tenemos para ti";
+    this.title.setTitle(t);
 
-
-  ngOnInit(): void {
-      let t:string= "Nuestros Productos - Conoce y vende todos los productos que tenemos para ti";
-      this.title.setTitle(t);
-
-      this.seoService.generarTag({
-        description: "Recargas Electronicas, Pago de Servicios, Tarjetas de regalo: Telcel, Virgin, CFE, Google Play, Netflix, Steam, Nintendo",
-        keywords: "recargas electronicas, recarga telcel, pagar servicio, pagar recibo telmex, tarjeta de regalo, pines electronicos",
-        ogtitle: "Conoce y vende todos los productos que tenemos para ti",
-        ogdescription: "Recargas Electronicas, Pago de Servicios, Tarjetas de regalo: Telcel, Virgin, CFE, Google Play, Netflix, Steam, Nintendo",
-        slug: "productos"
-      })
+    this.seoService.generarTag({
+      description: "Recargas Electronicas, Pago de Servicios, Tarjetas de regalo: Telcel, Virgin, CFE, Google Play, Netflix, Steam, Nintendo",
+      keywords: "recargas electronicas, recarga telcel, pagar servicio, pagar recibo telmex, tarjeta de regalo, pines electronicos",
+      ogtitle: "Conoce y vende todos los productos que tenemos para ti",
+      ogdescription: "Recargas Electronicas, Pago de Servicios, Tarjetas de regalo: Telcel, Virgin, CFE, Google Play, Netflix, Steam, Nintendo",
+      slug: "productos"
+    })
   }
+
 
   ngAfterViewInit(): void {
     new Swiper('.swiper', {

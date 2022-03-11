@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { SeoService } from 'src/app/services/seo.service';
 
@@ -7,11 +7,9 @@ import { SeoService } from 'src/app/services/seo.service';
   templateUrl: './faqs.component.html',
   styleUrls: ['./faqs.component.css']
 })
-export class FaqsComponent implements OnInit {
+export class FaqsComponent  {
 
-  constructor(private title: Title, private seoServivce: SeoService) { }
-
-  ngOnInit(): void {
+  constructor(private title: Title, private seoServivce: SeoService) { 
 
     let t: string= "Preguntas Frecuentes";
     this.title.setTitle(t);
@@ -25,4 +23,5 @@ export class FaqsComponent implements OnInit {
     })
   }
 
+ 
 }

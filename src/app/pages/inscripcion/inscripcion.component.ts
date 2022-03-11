@@ -9,9 +9,8 @@ import { SeoService } from 'src/app/services/seo.service';
 })
 export class InscripcionComponent implements OnInit {
 
-  constructor(private title: Title, private seoService: SeoService) { }
+  constructor(private title: Title, private seoService: SeoService) {
 
-  ngOnInit(): void {
     let t:string= "Inscripción - Únete a nosotros y haz crecer tu negocio";
     this.title.setTitle(t);
 
@@ -22,6 +21,10 @@ export class InscripcionComponent implements OnInit {
       ogdescription: "Inscríbete y disfruta de los grandes beneficios que tenemos para ti",
       slug: "inscripcion"
     })
+   }
+
+  ngOnInit(): void {
+  
   }
 
 }

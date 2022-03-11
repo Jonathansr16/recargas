@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 
 //modulos
 import { AppRoutingModule } from './routers/app-routing.module';
+import { SharedModule } from './shared/shared.module';
 //Tag Manager
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,11 @@ import { GoogleTagManagerModule } from 'angular-google-tag-manager';
    BrowserModule.withServerTransition({ appId: 'serverApp' }),
    AppRoutingModule,
     RouterModule,
+    SharedModule,
     GoogleTagManagerModule.forRoot({
       id: 'GTM-T3D7SX5',
-    })
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

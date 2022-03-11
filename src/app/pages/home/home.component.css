@@ -1,4 +1,4 @@
-/* btotn */
+/*--======= botton up =======--*/
 
 .button-up:hover {
     transform: scale(1.1);
@@ -6,43 +6,85 @@
 }
 
 
-/* fin bootn-up */
+/*--======= Advantage =======--*/
 
-
-/* Card Ventajas */
-
-.card2 {
+.advantage {
     align-items: center;
     border: 1px solid #7FB3D5;
     border-radius: 10px;
     background-color: #FFF;
 }
 
-.card2 .title {
+.advantage .section-title h3 {
     font-size: 23px;
     font-weight: 600;
 }
 
-.card2 .card2-col .card-body ul {
+.advantage .advantage-content .advantage-description ul {
     list-style: none;
 }
 
-.card2 .card-body ul li {
+.advantage-description ul li {
     display: block;
     padding: 3px;
     margin-right: 55px;
 }
 
-.card2 .card-body ul li .fas,
+.advantage-description ul li .fas,
 .fa-check {
     color: #AED6F1;
 }
 
 
-/* Fin card Ventajas */
+/*--======= FOR BUSINESS =======--*/
+
+.for-business {
+    padding: 30px 0 60px 0;
+    background-color: #FFF;
+}
+
+.section-title .section-title-02>span {
+    color: #CF2541;
+}
+
+.for-business .container-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.for-business .img-businnes {
+    width: 48%;
+}
+
+.for-business .container-text {
+    width: 48%;
+}
+
+.container-text h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.container-text h3 span {
+    color: #F02062;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.container-text p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
 
 
-/* card-3 estadisticas */
+/*--======= Statistics =======--*/
 
 .records {
     position: relative;
@@ -97,38 +139,49 @@
 }
 
 
-/*Card-4 como vender*/
+/*--======= OUR PRODUCTS =======--*/
 
-.card-4 .text {
-    font-weight: bold;
+.our-products .section-title h3.title {
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
 }
 
-.card-4 .fila .columna .card-4-item {
+.our-products .section-title p.text {
+    font-weight: bold;
+    text-align: center;
+}
+
+.our-products .card-item .card-body {
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: all 0.25s;
+    background-color: #FFFFFF;
 }
 
-.card-4 .fila .columna .card-4-item:hover {
+.our-products .card-item .card-body:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-4 .fila .columna .card-4-item .text {
+.card-item .card-body .text {
     color: #333;
     font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
 }
 
-.card-4 .fila .columna .card-4-item a {
+.card-item .card-body .card-description a {
     font-weight: 500;
     text-decoration: none;
-    color: #3498db;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    font-size: 20px;
 }
 
-.card-4 .fila .columna .bar {
+.our-products .card-item .bar {
     width: 100px;
     height: 6px;
     position: relative;
@@ -141,50 +194,150 @@
     animation: bar 0.5s;
 }
 
-.card-4 .fila .columna:hover .bar {
+.our-products .card-item:hover .bar {
     display: block;
 }
 
-.card-5 .text {
-    font-family: sans-serif;
+.our-products .learn-more-btn {
+    cursor: pointer;
+    transition: .3s ease;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.our-products .learn-more-btn i {
+    transition: .3s ease;
+}
+
+.our-products:hover .learn-more-btn:hover i {
+    transform: translateX(10px);
 }
 
 
-/* card 5 servicios*/
+/*--======= MODAL OUR PRODUCTS =======--*/
 
-.card-5 {
+.our-products .container {
+    position: relative;
+}
+
+.our-products .card-item .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-products .card-item .product-modal {
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: .3s ease;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.our-products .card-item .product-modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.our-products .card-item .product-modal-body {
+    position: relative;
+    background: #fff;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    transform: translateY(-50px);
+    transition: .5s ease;
+}
+
+.our-products .card-item .product-modal.active .product-modal-body {
+    transform: translateY(0);
+}
+
+.our-products .card-item .product-modal-body .modal-close-btn {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.product-modal-body h3 {
+    font-size: 2em;
+}
+
+.product-modal-body h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 15px 0 10px;
+}
+
+.product-modal-body ul li {
+    margin-top: 15px;
+}
+
+.product-modal-body ul li i {
+    color: #3B49F2;
+    margin-right: 3px;
+}
+
+
+/*--======= ABOUT US=======--*/
+
+.about-us {
     background-color: #FFFFFF;
 }
 
-.card-5 .row .col-lg-6 .card-5-title {
-    font-style: normal;
+.about-us .about-img img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about-us .text {
+    font-family: sans-serif;
+}
+
+.about-us .row .col-lg-6 .about-title {
     font-size: 35px;
+    font-weight: 600;
     line-height: 64px;
 }
 
-.card-5 .row .col-lg-6 .card-5-txt {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 32px;
-    color: #18191F;
-}
-
-.card-5 .row .col-lg-6 button {
-    background-color: #64bcf4;
+.about-us .row .col-lg-6 a {
+    background-color: #1842BA;
+    border: none;
+    display: block;
+    margin: 40px auto;
+    width: 280px;
+    border-radius: 10px;
 }
 
 
-/* card-6 */
+/*--======= REGISTRATION =======--*/
 
-.card-6 .row .col .card-6-tl {
+.registration .item-description .item-title {
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
 }
 
 
-/* Animaciones */
+/*--======= ALL ANIMATIONS =======--*/
 
 @keyframes bar {
     0% {
@@ -196,9 +349,10 @@
 }
 
 
-/* Responsive */
+/*--======= ALL RESPONSIVE SECTIONS=======--*/
 
 @media (max-width: 1280px) {
+    /*--======= STATISTICS =======--*/
     .record-circle {
         width: 150px;
         height: 150px;
@@ -210,34 +364,35 @@
     .record-circle .sub-title {
         font-size: 0.9rem;
     }
-    .section-header .text {
+    .section-title .text {
         max-width: 500px;
     }
 }
 
-@media screen and (max-width: 1036px) {
-    .card3 {
-        padding: 50px 50px 0 50px;
+@media (max-width: 900px) {
+    /*--======= FOR BUSINESS =======--*/
+    .for-business .container-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .card3 .content .box {
-        width: calc(50% - 30px);
-        margin-bottom: 50px;
+    .for-business .container-text {
+        width: 90%;
+    }
+    .for-business .img-businnes {
+        width: 90%;
     }
 }
 
 @media (max-width: 850px) {
+    /*--======= STATISTICS =======--*/
     .records .container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 580px) {
-    .card3 .content .box {
-        width: 100%;
-    }
-}
-
 @media (max-width: 560px) {
+    /*--======= STATISTICS =======--*/
     .records .container {
         grid-template-columns: 1fr;
     }
@@ -248,10 +403,12 @@
 }
 
 @media screen and (max-width: 500px) {
-    .wrapper {
-        padding: 20px;
+    /*--======= FOR BUSINESS=======--*/
+    .for-business .img-businnes {
+        margin-bottom: 60px;
+        width: 99%;
     }
-    .card3 {
-        padding: 30px 20px 0 20px;
+    .for-business .container-text {
+        width: 95%;
     }
 }

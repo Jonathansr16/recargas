@@ -1,6 +1,6 @@
 <main class="wow animate__animated animate__fadeIn">
     <div class="big-wrapper light">
-        <img src="assets/images/shape.png" class="shape" alt="shape">
+        <img src="assets/images/shape.png" class="shape" alt="shape" width="700px">
 
         <div class="showcase-area">
             <div class="container">
@@ -17,27 +17,24 @@
                 </div>
 
                 <div class="right">
-                    <img src="assets/images/person.png" alt="Person Image" class="person">
+                    <img src="assets/images/person.png" alt="Person Image" class="person" width="123%">
                 </div>
             </div>
         </div>
     </div>
 </main>
 
-
-<!--Ventajas -->
-<section class="mt-5 mb-5">
+<!-- SECTION ADVANTAGE -->
+<section class="advantage mt-5 mb-5">
     <div class="card2 row g-0 wow animate__animated animate__fadeInUp">
-        <div class="section-header mt-3">
+        <div class="section-title mt-3">
             <h3 class="title" data-title="Beneficios">¿Por qué te conviene quedarte con nosotros?</h3>
         </div>
-        <div class="col-md-8">
-            <img src="assets/images/banner_ventajas.png" class="img-fluid rounded-start" alt="Ventajas">
+        <div class="col-md-8 advantage-img">
+            <img src="assets/images/banner_ventajas.png" class="img-fluid" width="100%" alt="Ventajas">
         </div>
-        <div class="card2-col col-md-4">
-            <div class="card-body">
-
-
+        <div class="col-md-4 advantage-content">
+            <div class="advantage-description">
                 <ul>
                     <li class="text"> <span class="fas fa-check"></span> Ofrecemos una comisión fija</li>
                     <li class="text"> <span class="fas fa-check"></span> Estamos en Constante Innovación! agregando compañías de venta de tiempo aire y pago de servicios. </li>
@@ -50,10 +47,36 @@
         </div>
     </div>
 </section>
-<!-- fin Ventajas -->
+<!-- FIN ADVANTAGE -->
 
-<!-- estadisticas-->
-<section>
+
+<!-- SECTION FOR BUSINESS -->
+<section class="container-fluid for-business mt-5 ">
+
+    <div class="section-title">
+        <p class="section-title-01">para tu negocio</p>
+        <h2 class="section-title-02">para tu <span>negocio</span></h2>
+    </div>
+
+    <div class="container-content">
+        <img src="assets/images/banner_negocio.png" class="img-businnes" alt="banner negocio ">
+        <div class="container-text">
+            <h3><span class="far fa-check-circle "></span>todo en uno</h3>
+            <p>Vende tiempo aire a cualquier compañia de tus clientes, paga los servicios que necesites & pines electrónicos, desde tu celular o computadora, todo lo que necesites en una sola plataforma adaptada a tus necesidades </p>
+            <h3><span class="far fa-check-circle "></span>seguro y confiable</h3>
+            <p> Recargas Electrónicas cuenta con la tranquilidad de estar trabajando con un sistema seguro y confiable, todos sus datos personales y financieros se encuentran protegidos con nosotros y nuestro sitio web cuenta con un certificado SSL</p>
+            <h3><span class="far fa-check-circle "></span>cuentas claras</h3>
+            <p>Reporte de ventas detallado por dia, semana o mes. Empieza a vender desde $300, recarga cuando quieras, sin pagos forzosos ni anualidades.</p>
+            <h3><span class="far fa-check-circle "></span>Porcentaje de ganancias fijas</h3>
+            <p>Obten tus ganancias desde tu primer deposito, Por cada venta que realizas de tiempo aire, pin electrónico o cobro de servicios recibe un porcentaje de comisión que incrementa tus ingresos mensuales.</p>
+        </div>
+    </div>
+</section>
+<!-- FIN FOR BUSINESS -->
+
+
+<!-- SECTION STATISTICS -->
+<section class="statistics">
     <div class="records wow animate__animated animate__fadeInUp">
 
         <div class="container">
@@ -87,150 +110,220 @@
         </div>
     </div>
 </section>
-<!-- fin estadisticas -->
+<!-- FIN STATISTICS -->
 
-<!-- como vender -->
-<section class=" mt-5 mb-5">
-    <div class="container card-4 wow animate__animated animate__fadeInUp">
 
-        <div class="section-header">
-            <h4 class="title" data-title="Metodos de Venta">¿Cómo Puedo Vender?</h4>
+<!-- SECTION OUR PRODUCTS -->
+<section class="our-products section mt-5 mb-5">
+    <div class="container wow animate__animated animate__fadeInUp">
+
+        <div class="section-title">
+            <h3 class="title" data-title="Metodos de Venta">¿cómo puedo vender?</h3>
             <p class="text">
                 Elije la mejor forma que se adapte a ti para vender
             </p>
         </div>
-        <div class="row g-3 justify-content-evenly fila">
+        <div class="row g-3 justify-content-evenly">
 
-            <div class="col-12 col-md-6 col-lg-4 columna">
+            <div class="col-12 col-md-6 col-lg-4  card-item">
                 <div class="bar"></div>
-                <div class="card card-4-item">
+                <div class="card-body">
                     <img src="assets/images/svg/desktop.svg" class="card-img-top" alt="desktop">
-                    <div class="card-body">
-                        <p class="card-title text">Desktop</p>
-                        <p class="card-text txt-text">Recarga & paga servicios de cualquier compañia desde tu computadora</p>
+                    <div class="card-description">
+                        <h4 class="card-title text">Desktop</h4>
+                        <p class="card-text txt-text">Accede a tu plataforma desde tu navegador de tu preferencia</p>
+                        <div class="learn-more-btn" (click)="closeProductBtn()">Leer Más
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-modal flex-center">
+                    <div class=" product-modal-body ">
+                        <i class="fas fa-times modal-close-btn"></i>
+                        <h3>Desktop</h3>
+                        <h4>¿Como puedes vender?</h4>
+                        <p>Accede a tu plataforma desde tu navegador de tu preferencia</p>
+                        <h4>Lo que necesitas para vender en tu plataforma via web</h4>
+                        <ul>
+                            <li><i class="bx bx-desktop"></i>Equipo de computo</li>
+                            <li><i class="bx bx-wifi"></i>Conexión a internet</li>
+                            <li><i class="bx bx-window-open"></i>Navegador de tu preferencia</li>
+                            <li><i class="bx bx-user-plus"></i>Datos de acceso a tu plataforma <a href="#">registrate aqui!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-12 col-md-6 col-lg-4 card-item ">
+                <div class="bar "></div>
+                <div class="card-body ">
+                    <img src="assets/images/svg/phone.svg " class="card-img-top " alt="phone ">
+                    <div class="card-description ">
+                        <h4 class="text ">SmartPhone</h4>
+                        <p class="card-tet ">Descarga la App para tu celular desde la tienda oficial</p>
+                        <div class="learn-more-btn" (click)="closeProductBtn()">Leer Más
+                            <i class="fas fa-long-arrow-alt-right "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-modal flex-center">
+                    <div class=" product-modal-body ">
+                        <i class="fas fa-times modal-close-btn "></i>
+                        <h3>SmarthPhone</h3>
+                        <h4>¿Como puedes vender?</h4>
+                        <p>Descarga la App Oficial desde la tienda oficial</p>
+                        <h4>¿Como utilizar la APP?</h4>
+                        <ul>
+                            <li><i class="bx bx-cloud-download"></i>descarga la app</li>
+                            <li><i class="bx bxs-user-detail"></i>Proporciona tus datos de acceso</li>
+                            <li><i class="bx bx-shield-alt-2"></i>cambia tu contraseña por una que recuerdes</li>
+                            <li><i class="bx bx-badge-check"></i>Listo! y empieza a realizar tus operaciones</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-12 col-md-6 col-lg-4 columna">
-                <div class="bar"></div>
-                <div class="card card-4-item">
-                    <img src="assets/images/svg/phone.svg" class="card-img-top" alt="phone">
-                    <div class="card-body">
-                        <p class="card-title text">SmartPhone</p>
-                        <p class="card-text txt-text">Descarga la aplicación desde la AppStore o PlayStore</p>
-
+            <div class="col-12 col-md-6 col-lg-4 card-item ">
+                <div class="bar "></div>
+                <div class="card-body ">
+                    <img src="assets/images/svg/sms.svg " class="card-img-top " alt="sms ">
+                    <div class="card-description ">
+                        <h4 class="text ">SMS</h4>
+                        <p class="txt-text ">Desde tu telefono movil realiza recargas enviando un simple SMS</p>
+                        <div class="learn-more-btn" (click)="closeProductBtn()">Leer Más
+                            <i class="fas fa-long-arrow-alt-right "></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="col-12 col-md-6 col-lg-4 columna">
-                <div class="bar"></div>
-                <div class="card card-4-item">
-                    <img src="assets/images/svg/sms.svg" class="card-img-top" alt="sms">
-                    <div class="card-body">
-                        <p class="card-title text">SMS</p>
-                        <p class="card-text txt-text">Desde tu telefono movil realiza recargas enviando un simple SMS</p>
-
+                <div class="product-modal flex-center">
+                    <div class=" product-modal-body ">
+                        <i class="fas fa-times modal-close-btn "></i>
+                        <h3>SMS</h3>
+                        <h4>¿Como puedes vender?</h4>
+                        <p>Vende tiempo aire desde la app, o via SMS gratuito</p>
+                        <h4>que necesitas</h4>
+                        <ul>
+                            <li><i class="bx bx-mobile-alt"></i>Telefono movil</li>
+                            <li><i class="bx bx-user-check"></i>Datos de acceso a tu plataforma</li>
+                            <li><i class="bx bx-window-alt"></i>Dar de alto tu numero y vinculado a tu plataforma</li>
+                            <li><i class="bx bx-chat"></i>Saldo minimo con nosotros tus mensajes son gratis! </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- fin como vender -->
+<!-- FIN OUR PRODUCTS -->
 
 
-<!-- servicios-->
-<section>
-    <div class="card-5  px-3 py-2 col-xxl-8 wow animate__animated animate__fadeInUp">
-        <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-2">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="assets/images/logos_companies.png" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy" alt="compañias">
+<!-- SECTION ABOUT US -->
+<section class="about-us ">
+    <div class="about-container px-3 py-2 col-xxl-8 wow animate__animated animate__fadeInUp ">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-2 ">
+            <div class="col-lg-6 about-img ">
+                <img src="assets/images/logos_companies.png " class="d-block mx-lg-auto img-fluid " width="500 " height="500 " loading="lazy " alt="compañias ">
             </div>
-            <div class="col-lg-6">
-                <p class="card-5-title lh-1">Recarga & Paga Servicios De Cualquier Compañia</p>
-                <p class="text">Ofrecemos la venta de tiempo aire de celulares de las principales compañías de México. Usted puede vender tiempo aire desde su tienda, farmacia, ciber, casa, etc. únicamente necesita tener un dispositivo con acceso a Internet (pagina web)
-                    o un celular para la venta vía mensaje de texto. No esperes mas y contrata nuestros servicios e incrementa tus ventas considerablemente con esta gran oportunidad de atraer nuevos clientes a tu negocio.
-                </p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a [routerLink]="['/productos']" class="btn btn-primary btn-lg px-4 me-md-2">Leer Más</a>
+            <div class="col-lg-6 about-description">
+                <h2 class="about-title lh-1">Recarga & Paga Servicios De Cualquier Compañia</h2>
+                <h3 class="text ">Ofrecemos la <strong>venta de tiempo aire</strong> de celulares de las principales compañías de México. Usted puede vender tiempo aire desde su tienda, farmacia, ciber, casa, etc. únicamente necesita tener un dispositivo con acceso a Internet
+                    (pagina web) o un celular para la venta vía mensaje de texto. No esperes mas y contrata nuestros servicios e incrementa tus ventas considerablemente con esta gran oportunidad de atraer nuevos clientes a tu negocio.
+                </h3>
+                <a [routerLink]="[ '/productos'] " class="btn btn-primary btn-lg">Leer Más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FIN ABOUT US-->
+
+
+
+<!-- SECTION REGISTRATION PROCESS -->
+<section class="registration ">
+    <div class="container px-4 py-5 wow animate__animated animate__fadeInUp " id="hanging-icons ">
+        <div class="section-title ">
+            <h3 class="title " data-title="Proceso De Incripción ">¿Cómo Me Inscribo?</h3>
+        </div>
+        <div class="registration-content row g-4 py-5 row-cols-1 row-cols-lg-3 ">
+            <div class="registration-item col d-flex align-items-start ">
+                <div class="registration-img icon-square bg-light text-dark flex-shrink-0 me-3 ">
+                    <img src="assets/images/icon-registro.png " width="20 " height="30 " alt="registro ">
+                </div>
+                <div>
+                    <div class="item-description ">
+                        <p class="item-title ">Llena el formulario</p>
+                        <p class="text ">Completa el formulario con los datos requeridos en la sección inscripción.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="registration-item col d-flex align-items-start ">
+                <div class="registration-img icon-square bg-light text-dark flex-shrink-0 me-3 ">
+                    <img src="assets/images/icon-email.png " width="20 " height="30 " alt="email ">
+                </div>
+                <div>
+                    <div class="item-description ">
+                        <p class="item-title ">Espera nuestro correo</p>
+                        <p class="text ">Con los datos que proporciones, nos pondremos en contacto contigo para brindarte tus datos de acceso a la plataforma.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="registration-item col d-flex align-items-start ">
+                <div class="item-img icon-square bg-light text-dark flex-shrink-0 me-3 ">
+                    <img src="assets/images/icon-login.png " width="30 " height="30 " alt="login ">
+                </div>
+                <div>
+
+                    <div class="item-description ">
+                        <p class="item-title ">Ingresa a tu plataforma</p>
+                        <p class="text "> Ingresa a tu plaforma con tu numero de usuario y contraseña, indicados en el correo. </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="registration-item col d-flex align-items-start ">
+                <div class="item-img icon-square bg-light text-dark flex-shrink-0 me-3 ">
+                    <img src="assets/images/icon-credit-card.png " width="20 " height="30 " alt="credit card ">
+                </div>
+                <div>
+                    <div class="item-description ">
+                        <p class="item-title ">Deposita o Transfiere</p>
+                        <p class="text ">Verifica en tu portal todas las cuentas y paga a la banca de tu preferencia. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registration-item col d-flex align-items-start ">
+                <div class="item-img icon-square bg-light text-dark flex-shrink-0 me-3 ">
+                    <img src="assets/images/icon-notificacion.png " width="20 " height="30 " alt="notificación ">
+                </div>
+                <div>
+
+                    <div class="item-description ">
+                        <p class="item-title ">Notifica</p>
+                        <p class="text ">Notifica tus Depositos & transferencias a tu distribuidor via WhatsApp o en la sección Reportar depositos.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="registration-item col d-flex align-items-start ">
+                <div class="item-img icon-square bg-light text-dark flex-shrink-0 me-3 ">
+                    <img src="assets/images/icon-recompensa.png " width="20 " height="30 " alt="beneficios ">
+                </div>
+                <div>
+                    <div class="item-description ">
+                        <p class="item-title ">Difruta de los beneficios</p>
+                        <p class="text ">Obten una comisión por cada venta de recargas, pago de servicios y tarjetas electronicas. </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- fin servicios-->
-
-
-<!-- Proceso de inscripcion -->
-<section>
-    <div class="card-6 container px-4 py-5 wow animate__animated animate__fadeInUp" id="hanging-icons">
-        <div class="section-header">
-            <p class="title" data-title="Proceso De Incripción">¿Cómo Me Inscribo?</p>
-        </div>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <img src="assets/images/icon-registro.png" width="20" height="30" alt="registro">
-                </div>
-                <div>
-                    <p class="card-6-tl">Llena el formulario</p>
-                    <p class="text">Completa el formulario con los datos requeridos en la sección inscripción.</p>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <img src="assets/images/icon-email.png" width="20" height="30" alt="email">
-                </div>
-                <div>
-                    <p class="card-6-tl">Espera nuestro correo</p>
-                    <p class="text">Con los datos que proporciones, nos pondremos en contacto contigo para brindarte tus datos de acceso a la plataforma.
-                    </p>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <img src="assets/images/icon-login.png" width="30" height="30" alt="login">
-                </div>
-                <div>
-                    <p class="card-6-tl">Ingresa a tu plataforma</p>
-                    <p class="text"> Ingresa a tu plaforma con tu numero de usuario y contraseña, indicados en el correo. </p>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <img src="assets/images/icon-credit-card.png" width="20" height="30" alt="credit card">
-                </div>
-                <div>
-                    <p class="card-6-tl">Deposita o Transfiere</p>
-                    <p class="text tex-center">Verifica en tu portal todas las cuentas y paga a la banca de tu preferencia. </p>
-                </div>
-            </div>
-
-            <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <img src="assets/images/icon-notificacion.png" width="20" height="30" alt="notificación">
-                </div>
-                <div>
-                    <p class="card-6-tl">Notifica</p>
-                    <p class="text">Notifica tus Depositos & transferencias a tu distribuidor via WhatsApp o en la sección Reportar depositos.</p>
-                </div>
-            </div>
-
-            <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <img src="assets/images/icon-recompensa.png" width="20" height="30" alt="beneficios">
-                </div>
-                <div>
-                    <p class="card-6-tl">Difruta de los beneficios</p>
-                    <p class="text">Obten una comisión por cada venta de recargas, pago de servicios y tarjetas electronicas. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- fin proceso de inscripción -->
+<!-- FIN REGISTRATION PROCESS -->

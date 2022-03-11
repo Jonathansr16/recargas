@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { SeoService } from 'src/app/services/seo.service';
 
@@ -7,12 +7,10 @@ import { SeoService } from 'src/app/services/seo.service';
   templateUrl: './pagaqui.component.html',
   styleUrls: ['./pagaqui.component.css']
 })
-export class PagaquiComponent implements OnInit {
+export class PagaquiComponent {
 
-  constructor(private title: Title, private seoService: SeoService) { }
+  constructor(private title: Title, private seoService: SeoService) {
 
-
-  ngOnInit(): void {
     let t: string= "Reporte de Deposito Pagaqui";
     this.title.setTitle(t);
 
@@ -23,6 +21,7 @@ export class PagaquiComponent implements OnInit {
       ogdescription: "Reporte de depositos & transferencias para usuarios de Pagaqui",
       slug: "pagaqui"
     })
-  }
+   }
+
 
 }

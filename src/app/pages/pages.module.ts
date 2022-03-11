@@ -10,11 +10,9 @@ import { RecargakiComponent } from './recargaki/recargaki.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FaqsComponent } from './faqs/faqs.component';
-import { PagesComponent } from './pages.component';
 
 
 //Modulos
-import { PagesRoutingModule } from './pages.routing.module';
 import { SwiperModule } from 'swiper/angular';
 import { NgwWowModule } from 'ngx-wow';
 import { SharedModule } from '../shared/shared.module';
@@ -29,7 +27,6 @@ import { SharedModule } from '../shared/shared.module';
     InscripcionComponent,
     FaqsComponent,
     ContactoComponent,
-    PagesComponent
   ],
   imports: [
     CommonModule,
@@ -37,8 +34,6 @@ import { SharedModule } from '../shared/shared.module';
     NgwWowModule,
     RouterModule,
     SharedModule,
-    PagesRoutingModule,
-    
   ],
   exports: [
     HomeComponent,
@@ -48,7 +43,7 @@ import { SharedModule } from '../shared/shared.module';
     InscripcionComponent,
     FaqsComponent,
     ContactoComponent,
-    PagesComponent
+    
   ]
 })
 export class PagesModule { }

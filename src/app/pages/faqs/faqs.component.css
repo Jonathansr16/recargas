@@ -1,3 +1,5 @@
+/*--======= COMMON STYLES FOR ALL SECTIONS FAQS =======--*/
+
 h1 {
     align-items: center;
     font-weight: bold;
@@ -6,6 +8,11 @@ h1 {
 .faqs-title {
     font-size: 25px;
     font-weight: bold;
+}
+
+.faqs-subtitle h3 {
+    font-size: 1.2rem;
+    color: #212529;
 }
 
 .flex-center {
@@ -52,56 +59,56 @@ h1 {
 }
 
 
-/* FAQS-comision */
+/*--======= FAQS COMISION =======--*/
 
-.comision-container .comision-title {
+.faqs-comision .faqs-title h2 {
     color: #24A148;
 }
 
-.comision-container .comision-icon {
+.faqs-comision .comision-icon {
     background: #24A148;
 }
 
 
-/* FAQS-depositos */
+/*--======= FAQS DEPOSITOS =======--*/
 
-.depositos-container .depositos-title {
+.faqs-depositos .faqs-title h2 {
     color: #0F62FE;
 }
 
-.depositos-container .depositos-icon {
+.faqs-depositos .depositos-icon {
     background: #0F62FE;
 }
 
 
-/* FAQS-recargas */
+/*--======= FAQS RECARGAS =======--*/
 
-.recargas-container .recargas-title {
+.faqs-recargas .faqs-title h2 {
     color: #FA4D56;
 }
 
-.recargas-container .recarga-icon {
+.faqs-recargas .recarga-icon {
     background: #D35400;
 }
 
 
-/* FAQS-inscripcion */
+/*--======= FAQS INSCRIPCION =======--*/
 
-.inscripcion-container .inscripcion-title {
+.faqs-inscripcion .faqs-title h2 {
     color: #6C63FF;
 }
 
-.inscripcion-container .inscripcion-icon {
+.faqs-inscripcion .inscripcion-icon {
     background-color: #8A3FFC;
 }
 
 
-/* FAQS-plataforma */
+/*--======= FQS PLATAFORMA =======--*/
 
-.plataforma-container .plataforma-title {
+.faqs-plataforma .faqs-title h2 {
     color: #F9D726;
 }
 
-.plataforma-container .plataforma-icon {
+.faqs-plataforma .plataforma-icon {
     background-color: #F1C21B;
 }

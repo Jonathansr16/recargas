@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { SeoService } from 'src/app/services/seo.service';
 
@@ -7,11 +7,9 @@ import { SeoService } from 'src/app/services/seo.service';
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.css']
 })
-export class ContactoComponent implements OnInit {
+export class ContactoComponent {
 
-  constructor(private title: Title, private seoService: SeoService) { }
-
-  ngOnInit(): void {
+  constructor(private title: Title, private seoService: SeoService) {
 
     let t: string= "Contacto";
     this.title.setTitle(t);
@@ -23,7 +21,10 @@ export class ContactoComponent implements OnInit {
     ogdescription: "Contacto para asesoria para la venta de recargas electrónicas con una comsión fija",
     slug: "contacto"
    })
+   }
 
-  }
+
+   
+  
 
 }
