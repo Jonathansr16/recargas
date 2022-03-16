@@ -1,9 +1,10 @@
-/* car1 figuras */
-
-#ins_card {
+.section-inscription {
     padding: 0;
     margin: 0;
-    position: relative;
+}
+
+.section-inscription .img-inscription img {
+    display: block;
 }
 
 .header-shape-1 {

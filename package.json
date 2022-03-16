@@ -32,6 +32,7 @@
     "ngx-wow": "^2.0.1",
     "normalize.css": "^8.0.1",
     "rxjs": "~7.4.0",
+    "sweetalert2": "^11.4.4",
     "swiper": "^7.4.1",
     "tslib": "^2.3.0",
     "wowjs": "^1.1.3",

@@ -27,8 +27,8 @@
 }
 
 .contact-list li h3 {
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 500;
     margin-bottom: 10px;
     color: #FFF;
 }
@@ -40,7 +40,9 @@
 }
 
 .contact-list li span {
-    color: #BEBFC7;
+    color: #d0d3ff;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .contact-list .list-email span {
@@ -57,6 +59,20 @@
     border-bottom: 1px solid #e8e8e8;
     margin-bottom: 20px;
     background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
+.section-contact p {
+    color: #777;
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0 30px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-contact p>strong {
+    color: #000;
 }
 
 
@@ -121,8 +137,14 @@
 .contact-recargaki .contact-left p {
     color: #777;
     font-size: 1.3em;
+    margin-top: 20px;
     margin-bottom: 30px;
     padding-left: 20px;
+}
+
+.contact-recargaki .contact-left p span {
+    color: #0e2431;
+    font-weight: 700;
 }
 
 .contact-recargaki .contact-left img {

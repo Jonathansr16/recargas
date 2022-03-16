@@ -1,19 +1,16 @@
-import { Component, Inject, OnInit, PLATFORM_ID, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 import {  Title } from '@angular/platform-browser';
 import { NgwWowService } from 'ngx-wow';
 import { SeoService } from 'src/app/services/seo.service';
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
-
-import { ActivatedRoute } from '@angular/router';
-
 
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css', "./lading-page.css"]
+  styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit  {
+export class HomeComponent  {
+
 
 
   clientes: number=1000;
@@ -23,8 +20,7 @@ export class HomeComponent implements OnInit  {
   
   constructor(  private title: Title,  
                 private wowService: NgwWowService,  
-                private seoService: SeoService,
-                private renderer2: Renderer2)  {
+                private seoService: SeoService)  {
     
     this.wowService.init();
 
@@ -38,42 +34,10 @@ export class HomeComponent implements OnInit  {
       slug: "home"
     })
 
-
-  }
-
-  ngOnInit(): void {
-  }
-
-
-  closeModal():void {
     
   }
 
-  closeProductBtn() {
-    const productsModel = document.querySelectorAll(".product-modal");
-    const learMoreBtns = document.querySelectorAll(".learn-more-btn");
-    const productsCloseBtn = document.querySelectorAll(".modal-close-btn");
-
-    let productModal:any = function (modalclick:any) {
-        productsModel[modalclick].classList.add('active');
-    }
-
-    learMoreBtns.forEach((learMoreBtn, i) => {
-        learMoreBtn.addEventListener("click", () => {
-          productModal(i);
-        });
-    });
-
-    productsCloseBtn.forEach((modalCloseBtn) => {
-      modalCloseBtn.addEventListener("click", () =>{
-        productsModel.forEach((ModelView) => {
-          ModelView.classList.remove("active");
-        });
-      });
-    });
-  }
-
-
+ 
 
   contador1: any = setInterval( () => {
 
@@ -115,7 +79,4 @@ export class HomeComponent implements OnInit  {
     }
   }, 200)
 
-
-
 }
-

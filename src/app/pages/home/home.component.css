@@ -1,3 +1,92 @@
+/*--======= presentation-content =======--*/
+
+.presentation-content {
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #f1f8fc;
+    --darkOne: #312f3a;
+}
+
+.presentation-content img {
+    width: 100%;
+}
+
+.presentation-content h1 {
+    font-weight: bold;
+}
+
+.big-wrapper {
+    position: relative;
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.presentation-content .container-p {
+    position: relative;
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+}
+
+.presentation-content .cta a.btn-insc {
+    display: inline-block;
+    padding: 0.9rem 1.9rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.presentation-content .cta a.btn-insc {
+    background-color: var(--hoverColor);
+    transform: scale(1);
+}
+
+.presentation-content .showcase-area .container-p {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation-content .big-title {
+    font-size: 1.4rem;
+    color: var(--darkOne);
+    text-transform: capitalize;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.showcase-area .btn-insc {
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+}
+
+.presentation-content .person {
+    width: 123%;
+    transform: translate(15%, 25px);
+}
+
+.presentation-content .shape {
+    position: absolute;
+    z-index: 0;
+    width: 500px;
+    bottom: -180px;
+    left: -15px;
+    opacity: 0.1;
+}
+
+
 /*--======= botton up =======--*/
 
 .button-up:hover {
@@ -16,7 +105,7 @@
 }
 
 .advantage .section-title h3 {
-    font-size: 23px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -43,8 +132,14 @@
     background-color: #FFF;
 }
 
-.section-title .section-title-02>span {
-    color: #CF2541;
+.for-business .section-title h2 {
+    font-size: 2.1875rem;
+    font-weight: 600;
+}
+
+.for-business .section-title p {
+    font-size: 1.30rem;
+    font-weight: bold;
 }
 
 .for-business .container-content {
@@ -81,6 +176,8 @@
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
+    font-size: 1.20rem;
+    font-size: 'Poppins';
 }
 
 
@@ -141,10 +238,16 @@
 
 /*--======= OUR PRODUCTS =======--*/
 
+.our-products {
+    position: relative
+}
+
 .our-products .section-title h3.title {
     text-align: center;
     display: block;
     text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .our-products .section-title p.text {
@@ -160,25 +263,27 @@
     background-color: #FFFFFF;
 }
 
+.our-products .card-item .card-body img {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
 .our-products .card-item .card-body:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-item .card-body .text {
+.card-item .card-description h4 {
     color: #333;
     font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
 }
 
-.card-item .card-body .card-description a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #FFF;
-    text-align: center;
-    display: block;
-    font-size: 20px;
+.card-item .card-description p {
+    font-size: 1.25rem;
 }
 
 .our-products .card-item .bar {
@@ -196,103 +301,6 @@
 
 .our-products .card-item:hover .bar {
     display: block;
-}
-
-.our-products .learn-more-btn {
-    cursor: pointer;
-    transition: .3s ease;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 500;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-}
-
-.our-products .learn-more-btn i {
-    transition: .3s ease;
-}
-
-.our-products:hover .learn-more-btn:hover i {
-    transform: translateX(10px);
-}
-
-
-/*--======= MODAL OUR PRODUCTS =======--*/
-
-.our-products .container {
-    position: relative;
-}
-
-.our-products .card-item .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.our-products .card-item .product-modal {
-    z-index: 99999;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    transition: .3s ease;
-    visibility: hidden;
-    opacity: 0;
-    overflow: hidden;
-}
-
-.our-products .card-item .product-modal.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.our-products .card-item .product-modal-body {
-    position: relative;
-    background: #fff;
-    max-width: 600px;
-    margin: 20px;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
-    transform: translateY(-50px);
-    transition: .5s ease;
-}
-
-.our-products .card-item .product-modal.active .product-modal-body {
-    transform: translateY(0);
-}
-
-.our-products .card-item .product-modal-body .modal-close-btn {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    margin: 20px;
-    cursor: pointer;
-}
-
-.product-modal-body h3 {
-    font-size: 2em;
-}
-
-.product-modal-body h4 {
-    font-size: 1.3em;
-    font-weight: 600;
-    margin: 15px 0 10px;
-}
-
-.product-modal-body ul li {
-    margin-top: 15px;
-}
-
-.product-modal-body ul li i {
-    color: #3B49F2;
-    margin-right: 3px;
 }
 
 
@@ -330,10 +338,19 @@
 
 /*--======= REGISTRATION =======--*/
 
+.registration .section-title h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .registration .item-description .item-title {
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
+}
+
+.registration img {
+    width: 100%;
 }
 
 
@@ -410,5 +427,61 @@
     }
     .for-business .container-text {
         width: 95%;
+    }
+}
+
+
+/*  */
+
+@keyframes appear {
+    0% {
+        clip-path: circle(30% at -25% -25%);
+    }
+    100% {
+        clip-path: circle(150% at 0 0);
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .presentation-content .showcase-area {
+        padding: 2.5rem 0;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .presentation-content .showcase-area .container-p {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-gap: 2rem;
+    }
+    .presentation-content .big-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .presentation-content .text {
+        font-size: 1rem;
+        margin: 1.4rem 0 1.5rem;
+    }
+    .presentation-content .person {
+        width: 100%;
+        transform: none;
+    }
+    .presentation-content .shape {
+        bottom: -180px;
+        left: -150px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .presentation-content .container {
+        padding: 0 1.5rem;
+    }
+    .presentation-content .big-title {
+        font-size: 0.9rem;
+    }
+    .presentation-content .text {
+        margin: 1.1rem 0 1.5rem;
+    }
+    .presentation-content .showcase-area .btn-insc {
+        font-size: 0.8rem;
     }
 }

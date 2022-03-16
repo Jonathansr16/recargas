@@ -1,42 +1,51 @@
-/* banner servicios */
+/*--======= Common styles for all sections produc =======--*/
 
-#serv-card {
-    padding: 0;
-    margin: 0;
-    position: relative;
+.section {
+    padding: 30px 0 60px 0;
+    background-color: #FFF;
 }
 
-.header-shape-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-    background-image: url(/assets/images/svg/header-shape-1.svg);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-.header-shape-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-}
-
-
-/* Fin banner Servicios */
-
-.title-2 {
+.section-title h2 {
+    font-size: 2.1875rem;
     font-weight: 600;
-    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.container .content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-text h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.container-text h3 span {
+    color: #F02062;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin: 0 15px 0 0;
+    /* margin-right: 5px; */
+    font-size: 40px;
+}
+
+.container-text p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 1.20rem;
+    font-size: 'Poppins';
 }
 
 .swiper {
-    width: 240px;
-    height: 320px;
+    width: 260px;
+    height: 350px;
 }
 
 .swiper-slide {
@@ -61,96 +70,121 @@
     border: 1px solid #BBD0D8;
 }
 
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
 
-/* Recargas */
 
-.telcel {
+/*--======= PRODUCTS =======--*/
+
+.products {
+    padding: 0;
+    margin: 0;
+}
+
+.products .products-img img {
+    display: block;
+}
+
+.products .section-title h1 {
+    font-size: 2.3125rem;
+    font-weight: 700;
+}
+
+.products .section-title p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.header-shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url(/assets/images/svg/header-shape-1.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header-shape-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+/*--======= RECARGAS SECTION=======--*/
+
+.recargas-section .container-text h3 span {
+    color: #784cfb;
+}
+
+.recargas-section .telcel {
     border: 1px solid #2A8CEE;
 }
 
-.oui {
+.recargas-section .oui {
     border: 1px solid #464D5A;
 }
 
-.pillofon {
+.recargas-section .pillofon {
     border: 1px solid #b45559;
 }
 
-.unefon {
+.recargas-section .unefon {
     border: 1px solid #FFC300;
 }
 
-.movistar {
+.recargas-section .movistar {
     border: 1px solid #3EC121;
 }
 
-.att {
+.recargas-section .att {
     border: 1px solid #39CDEE;
 }
 
-.virgin {
+.recargas-section .virgin {
     border: 1px solid #e3231c;
 }
 
-.week {
+.recargas-section .week {
     border: 1px solid #74b22f;
 }
 
-.wimotelecom {
+.recargas-section .wimotelecom {
     border: 1px solid #ed1c23;
 }
 
-.gugacom {
+.recargas-section .gugacom {
     border: 1px solid #1d8ec1;
 }
 
 
-/* Fin recargas */
+/*--======= SERVICES SECTION=======--*/
 
-
-/*  Servicios */
-
-.telmex {
-    border: 1.5px solid #2A8CEE;
+.services-section .section-title h2.title:after {
+    background: #FF0066;
 }
 
-.totalplay {
-    border: 1.5px solid #EE6B2A
-}
-
-.megacable {
-    border: 1px solid #0e6db3;
-}
-
-.cfe {
-    border: 1px solid #1C8317;
-}
-
-.dish {
-    border: 1px solid #EE1212;
-}
-
-.avon {
-    border: 1px solid #B70061;
-}
-
-.televia {
-    border: 1px solid #DAE552;
-}
-
-.tupperware {
-    border: 1px solid #d004a8;
-}
-
-.natura {
-    border: 1px solid #e6a229;
+.services-section .container-text h3 span {
+    color: #FF0066;
 }
 
 
-/* Fin servicios */
+/*--======= GIFT SECTION=======--*/
 
+.gift-section .section-title h2.title:after {
+    background: #24A148;
+}
 
-/* Inicio tarjetas regalos */
+.gift-section .container-text h3 span {
+    color: #24A148;
+}
 
 .tarjetas-r .swiper-slide {
     border: none;
@@ -159,6 +193,3 @@
 .tarjetas-r .netflix {
     border: 1px solid #cb0922;
 }
-
-
-/* Fin tarjetas regalos */

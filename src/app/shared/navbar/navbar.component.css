@@ -2,15 +2,6 @@
     width: 100%;
     border-bottom-left-radius: 300px 15px;
     border-bottom-right-radius: 300px 15px;
-    background-color: #FFFFFF;
-}
-
-.sticky-top {
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
 }
 
 .nav-pills .nav-link.active,
@@ -182,5 +173,4 @@ nav ul li a:hover:after {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
-/*  */
+@media (max-width: 992) {}

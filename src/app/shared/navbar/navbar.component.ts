@@ -23,8 +23,13 @@ export class NavbarComponent{
      if(isPlatformBrowser (this.platformId)) {
       if (this.document.body.scrollTop > 20 || this.document.documentElement.scrollTop > 20) {
         this.renderer2.addClass(scrollnav, 'shadow');
+        this.renderer2.addClass(scrollnav, 'bg-white'); 
+        this.renderer2.removeClass(scrollnav, 'mt-3'); 
         } else {
           this.renderer2.removeClass(scrollnav, 'shadow');
+          this.renderer2.removeClass(scrollnav, 'bg-white');
+          this.renderer2.removeClass(scrollnav, 'bg-white'); 
+          this.renderer2.addClass(scrollnav, 'mt-3'); 
         }
 
       }

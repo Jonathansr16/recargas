@@ -1,3 +1,7 @@
+.main-content {
+    margin-top: 7rem;
+}
+
 .bottom-up {
     width: 50px;
     height: 50px;
@@ -20,10 +24,6 @@
 .bottom-up:hover {
     transform: scale(1.1);
     border-color: rgba(0, 0, 0, 0.1);
-}
-
-#container-main {
-    padding: 0;
 }
 
 
@@ -90,7 +90,7 @@
     cursor: pointer;
     background: #f44141;
     font-size: 23px;
-    animation: sombra 1.5s infinite;
+    /* animation: sombra 1.5s infinite; */
 }
 
 #btn-menu:checked~.btn-menu label {
@@ -105,25 +105,47 @@
 
 /* Animaciones */
 
-@keyframes sombra {
+
+/* @keyframes sombra {
     0% {
         box-shadow: 0 0 0 0 rgba(30, 136, 229, 1);
     }
     100% {
         box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
     }
-}
+} */
 
 
 /* Responsive buttom-up */
 
-@media (max-width: 450px) {
+
+/* @media (max-width: 450px) {
     .bottom-up {
         width: 50px;
         height: 50px;
         bottom: 100px;
     }
-}
+} */
 
 
 /* contac-lsit */
+
+@media (max-width: 991px) {
+    .main-content {
+        margin-top: 10rem;
+    }
+}
+
+
+/* @media (max-width: 700px) {
+    .main-content {
+        margin-top: 15rem;
+    }
+}
+
+
+/* @media (max-width: 472px) {
+    .main-content {
+        margin-top: 20rem;
+    }
+} */
