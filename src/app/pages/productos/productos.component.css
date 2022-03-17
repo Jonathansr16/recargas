@@ -39,13 +39,14 @@
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
-    font-size: 1.20rem;
-    font-size: 'Poppins';
+    font-size: 1.25rem;
+    line-height: 2;
 }
 
 .swiper {
     width: 260px;
     height: 350px;
+    position: relative;
 }
 
 .swiper-slide {
@@ -192,4 +193,18 @@
 
 .tarjetas-r .netflix {
     border: 1px solid #cb0922;
+}
+
+
+/* ALL QUERY OF ALL PRODUCT PAGE*/
+
+@media (max-width: 900px) {
+    .section .produt-content {
+        width: 100%;
+        order: 2;
+    }
+    .section .swiper-custom {
+        width: 100%;
+        order: 3;
+    }
 }

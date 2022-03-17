@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 import { Autoplay, Swiper, EffectCards } from 'swiper'
@@ -6,6 +6,7 @@ import { Autoplay, Swiper, EffectCards } from 'swiper'
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import { Title } from '@angular/platform-browser';
 import { SeoService } from 'src/app/services/seo.service';
+
 
 
 SwiperCore.use([ Autoplay, EffectCoverflow, Pagination]);
@@ -18,7 +19,7 @@ SwiperCore.use([EffectCards]);
 })
 
 
-export class ProductosComponent implements AfterViewInit{
+export class ProductosComponent implements OnInit{
   
   constructor( private title: Title, private seoService: SeoService) { 
     let t:string= "Nuestros Productos - Conoce y vende todos los productos que tenemos para ti";
@@ -30,11 +31,13 @@ export class ProductosComponent implements AfterViewInit{
       ogtitle: "Conoce y vende todos los productos que tenemos para ti",
       ogdescription: "Recargas Electronicas, Pago de Servicios, Tarjetas de regalo: Telcel, Virgin, CFE, Google Play, Netflix, Steam, Nintendo",
       slug: "productos"
-    })
+    });
+  
+   
   }
 
-
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
+    
     new Swiper('.swiper', {
      
       effect: 'cards',
@@ -48,6 +51,7 @@ export class ProductosComponent implements AfterViewInit{
         el: '.swiper-pagination',
       },
     });
+  
   
   }
 
