@@ -9,7 +9,7 @@ import { AppRoutingModule } from './routers/app-routing.module';
 import { SharedModule } from './shared/shared.module';
 //Tag Manager
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GoogleTagManagerModule.forRoot({
       id: 'GTM-T3D7SX5',
     }),
-    BrowserAnimationsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -61,11 +61,6 @@
     background-size: cover;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-}
-
 .swiper-slide {
     background-color: #FFF;
     border: 1px solid #BBD0D8;
@@ -73,7 +68,6 @@
 
 .swiper-slide img {
     display: block;
-    width: 100%;
 }
 
 

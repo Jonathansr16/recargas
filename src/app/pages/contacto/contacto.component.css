@@ -50,6 +50,10 @@
     margin: 15px 0;
 }
 
+.contact-list li span a:hover {
+    color: red;
+}
+
 .contact-list li span a {
     color: #D6D7DD;
     transition: all 0.3s ease;
@@ -172,6 +176,10 @@
     color: #fff;
     margin: 40px 0 0 0;
     text-transform: capitalize;
+}
+
+.contact-recargaki .contact-right .contact-list li span {
+    color: #e5fbe5;
 }
 
 
