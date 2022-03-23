@@ -4,6 +4,14 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+}
+
 body {
     background-color: #f1f8fc;
     font-family: "Poppins", sans-serif;
@@ -25,7 +33,6 @@ a {
 .section-title .text {
     max-width: 600px;
     margin: 0 auto !important;
-    font-family: "Poppins", sans-serif;
     color: #7a7a7a;
 }
 
@@ -211,7 +218,7 @@ footer p {
     font-size: 25px;
 }
 
-.contact .info li:hover .bx {
+.contact .info li:hover .bx-footer {
     animation: tada 1.5s infinite;
 }
 
@@ -302,14 +309,4 @@ footer p {
     .text {
         font-size: 1.3rem;
     }
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }

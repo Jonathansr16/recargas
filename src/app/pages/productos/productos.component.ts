@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Autoplay, Swiper, EffectCards } from 'swiper'
 // import Swiper core and required modules
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { SeoService } from 'src/app/services/seo.service';
 
 
@@ -33,7 +33,6 @@ export class ProductosComponent implements OnInit{
       slug: "productos"
     });
   
-   
   }
 
   ngOnInit(): void {

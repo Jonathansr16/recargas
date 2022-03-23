@@ -5,12 +5,20 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "postbuild": "react-snap",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run recargas:serve-ssr",
     "serve:ssr": "node dist/recargas/server/main.js",
     "build:ssr": "ng build && ng run recargas:server",
     "prerender": "ng run recargas:prerender"
+  },
+  "reactSnap": {
+    "source": "dist/recargas",
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    }
   },
   "private": true,
   "dependencies": {
@@ -30,9 +38,7 @@
     "animate.css": "^4.1.1",
     "express": "^4.15.2",
     "ngx-wow": "^2.0.1",
-    "normalize.css": "^8.0.1",
     "rxjs": "~7.4.0",
-    "sweetalert2": "^11.4.4",
     "swiper": "^7.4.1",
     "tslib": "^2.3.0",
     "wowjs": "^1.1.3",
@@ -52,6 +58,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "react-snap": "^1.23.0",
     "typescript": "~4.5.2"
   }
 }

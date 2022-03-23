@@ -110,7 +110,6 @@
 }
 
 .advantage .section-title h3 {
-    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -140,7 +139,6 @@
 }
 
 .for-business .section-title h2 {
-    font-size: 2.1875rem;
     font-weight: 600;
 }
 
@@ -154,8 +152,8 @@
     justify-content: space-evenly;
 }
 
-.for-business .img-businnes {
-    width: 48%;
+.for-business .container-content .bx {
+    font-size: 2.1875rem;
 }
 
 .for-business .container-text {
@@ -166,7 +164,6 @@
     margin-bottom: 5px;
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 1.7rem;
 }
 
 .for-business .container-text h3 span {
@@ -252,7 +249,6 @@
     text-align: center;
     display: block;
     text-transform: capitalize;
-    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -284,7 +280,6 @@
 .card-item .card-description h4 {
     color: #333;
     font-weight: 600;
-    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -345,7 +340,6 @@
 /*--======= REGISTRATION =======--*/
 
 .registration .section-title h3 {
-    font-size: 2rem;
     font-weight: 600;
 }
 

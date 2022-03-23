@@ -47,6 +47,10 @@ h1 {
     transform: scale(1.2);
 }
 
+.icon-faq {
+    font-size: 25px;
+}
+
 .accordion-item {
     border: 0px! important;
 }

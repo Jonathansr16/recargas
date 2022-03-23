@@ -45,18 +45,21 @@
     font-weight: 500;
 }
 
-.contact-list .list-email span {
+.contact-list .list-email a {
     display: flex;
     margin: 15px 0;
 }
 
-.contact-list li span a:hover {
-    color: red;
+.contact-list li a:hover {
+    transform: translateX(10px);
+    color: #FFF;
 }
 
-.contact-list li span a {
+.contact-list li a {
     color: #D6D7DD;
     transition: all 0.3s ease;
+    display: block;
+    font-size: 1.2rem;
 }
 
 .separator {

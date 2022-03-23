@@ -1,28 +1,22 @@
 import { Component } from '@angular/core';
 import {  Title } from '@angular/platform-browser';
-import { NgwWowService } from 'ngx-wow';
 import { SeoService } from 'src/app/services/seo.service';
 
 
 @Component({
   selector: 'app-inicio',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './inicio.component.html',
+  styleUrls: ['./inicio.component.css']
 })
-export class HomeComponent  {
-
-
+export class InicioComponent  {
 
   clientes: number=1000;
   ventas: number=0;
   servicios:number=0;
   anos:number=0;
   
-  constructor(  private title: Title,  
-                private wowService: NgwWowService,  
-                private seoService: SeoService)  {
+  constructor(  private title: Title, private seoService: SeoService)  {
     
-    this.wowService.init();
 
     let t: string= "Inicio - Vende recargas electrónicas, paga servicios y tarjetas de regalo todo eso en una sola plataforma";
     this.title.setTitle(t);

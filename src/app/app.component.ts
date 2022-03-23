@@ -1,8 +1,11 @@
-import { Component, HostListener, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, HostListener, Inject, OnInit, PLATFORM_ID, ElementRef } from '@angular/core';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import {Router, NavigationEnd } from '@angular/router';
+import { NgwWowService } from 'ngx-wow';
 
+import { fromEvent } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -15,30 +18,32 @@ export class AppComponent implements OnInit {
   private scrollHeight = 500;
   title = 'Recargas Electronicas';
 
-  constructor( @Inject(DOCUMENT) private document: Document, 
+  constructor( private wowService: NgwWowService,  
+               @Inject(DOCUMENT) private document: Document, 
                @Inject(PLATFORM_ID) private platformId,   
                private gtmService: GoogleTagManagerService,
-               private router: Router)      
-               {     
-          if(isPlatformBrowser (this.platformId)) 
-          {
-           this.gtmService.addGtmToDom();
-           }
-  }
+               private router: Router,
+               private el: ElementRef)  
+          {     
+         
+            this.wowService.init();
 
-  ngOnInit(): void {
-    this.router.events.forEach(item => {
-      if (item instanceof NavigationEnd) {
-          const gtmTag = {
-              event: 'page',
-              pageName: item.url
-          };
-
-          this.gtmService.pushTag(gtmTag);
-      }
-  });
-   
-  }
+          if(isPlatformBrowser (this.platformId))  {
+              this.gtmService.addGtmToDom();
+             }
+  
+           this.router.events.forEach(item => {
+            if (item instanceof NavigationEnd) {
+                const gtmTag = {
+                    event: 'page',
+                    pageName: item.url
+                };
+      
+                this.gtmService.pushTag(gtmTag);
+            }
+        });
+         
+          }
 
      //Obtenwmos el scroll para animar botom de subir
      @HostListener('window:scroll')
@@ -54,6 +59,7 @@ export class AppComponent implements OnInit {
   }
 
 
+
   onScrollTop():void {
  
     if(isPlatformBrowser (this.platformId)) {
@@ -61,5 +67,12 @@ export class AppComponent implements OnInit {
     }
   }
 
+  ngOnInit(): void {
+   
+  }
+
+  scroll$ = fromEvent(this.el.nativeElement, 'scroll').pipe(
+    map((e: MouseEvent) => e.timeStamp)
+  );
 
 }

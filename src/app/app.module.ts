@@ -5,8 +5,9 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 //modulos
-import { AppRoutingModule } from './routers/app-routing.module';
 import { SharedModule } from './shared/shared.module';
+import { PagesModule } from './pages/pages.module';
+import { AppRoutingModule } from './app-routing.module';
 //Tag Manager
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 
@@ -17,10 +18,11 @@ import { GoogleTagManagerModule } from 'angular-google-tag-manager';
   ],
   imports: [
    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+   SharedModule,
+   PagesModule,
    AppRoutingModule,
-    RouterModule,
-    SharedModule,
-    GoogleTagManagerModule.forRoot({
+   RouterModule,
+   GoogleTagManagerModule.forRoot({
       id: 'GTM-T3D7SX5',
     }),
   

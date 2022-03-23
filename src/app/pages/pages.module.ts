@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 //Components
-import { HomeComponent } from './home/home.component';
+import { InicioComponent } from './inicio/inicio.component';
 import { ProductosComponent } from './productos/productos.component';
 import { PagaquiComponent } from './pagaqui/pagaqui.component';
 import { RecargakiComponent } from './recargaki/recargaki.component';
@@ -15,35 +15,32 @@ import { FaqsComponent } from './faqs/faqs.component';
 //Modulos
 import { SwiperModule } from 'swiper/angular';
 import { NgwWowModule } from 'ngx-wow';
-import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
+    InicioComponent,
    ProductosComponent,
     PagaquiComponent,
     RecargakiComponent,
     InscripcionComponent,
-    FaqsComponent,
     ContactoComponent,
+    FaqsComponent,
   ],
   imports: [
     CommonModule,
     SwiperModule,
     NgwWowModule,
     RouterModule,
-    SharedModule,
   ],
   exports: [
-    HomeComponent,
+    InicioComponent,
     ProductosComponent,
     PagaquiComponent,
     RecargakiComponent,
     InscripcionComponent,
-    FaqsComponent,
     ContactoComponent,
-    
+    FaqsComponent,
   ]
 })
 export class PagesModule { }

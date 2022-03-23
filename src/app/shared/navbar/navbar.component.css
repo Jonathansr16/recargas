@@ -23,10 +23,12 @@
 .link {
     color: rgb(128, 128, 128);
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dropdown-item {
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dropdown-toggle::after {

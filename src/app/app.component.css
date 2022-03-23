@@ -21,6 +21,10 @@
     z-index: 100;
 }
 
+.bottom-up i {
+    font-size: 25px;
+}
+
 .bottom-up:hover {
     transform: scale(1.1);
     border-color: rgba(0, 0, 0, 0.1);
@@ -66,16 +70,6 @@
     background-color: #00BB2D;
 }
 
-
-/* .redes a:nth-child(2) {
-    background-color: #EE7A2F;
-} */
-
-
-/* .redes a:nth-child(1) {
-    background-color: #006AFF;
-} */
-
 .redes a:nth-child(2) {
     background-color: #34495E;
 }
@@ -90,7 +84,6 @@
     cursor: pointer;
     background: #f44141;
     font-size: 23px;
-    /* animation: sombra 1.5s infinite; */
 }
 
 #btn-menu:checked~.btn-menu label {
@@ -98,22 +91,15 @@
     animation: none;
 }
 
-.redes a:hover {
-    background: #3A3D40;
+.redes a:nth-child(1):hover {
+    background: #068022;
+    animation: tada 1.5s infinite;
 }
 
-
-/* Animaciones */
-
-
-/* @keyframes sombra {
-    0% {
-        box-shadow: 0 0 0 0 rgba(30, 136, 229, 1);
-    }
-    100% {
-        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
-    }
-} */
+.redes a:nth-child(2):hover {
+    background: #333835;
+    animation: tada 1.5s infinite;
+}
 
 
 /* Responsive buttom-up */
@@ -127,28 +113,8 @@
     }
 }
 
-
-/* contac-lsit */
-
-
-/* 453px */
-
 @media (max-width: 991px) {
     .main-content {
         margin-top: 10rem;
     }
 }
-
-
-/* @media (max-width: 700px) {
-    .main-content {
-        margin-top: 15rem;
-    }
-}
-
-
-/* @media (max-width: 472px) {
-    .main-content {
-        margin-top: 20rem;
-    }
-} */
